@@ -1,0 +1,1037 @@
+<title>Plumbing Ads Blueprint</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f3f5f8; --paper:#ffffff; --paper-2:#eaeef3;
+  --ink:#101c2c; --ink-2:#465364; --muted:#7a8593; --line:#d7dde5; --line-2:#c2cad4;
+  --accent:#1c5cab; --accent-soft:#e3edfa; --copper:#b0521c; --copper-soft:#f6e8df;
+  --hero:#0f2140; --hero-ink:#eaf1fb; --hero-grid:rgba(255,255,255,.07);
+  --good:#0ca30c; --warn:#fab219; --crit:#d03b3b;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --grid:#e1e0d9; --axis:#c3c2b7; --viz-muted:#898781;
+  --shadow:0 1px 2px rgba(16,28,44,.06),0 8px 24px rgba(16,28,44,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0e1319; --paper:#161c24; --paper-2:#1d2530;
+    --ink:#edf1f5; --ink-2:#b9c3cd; --muted:#8b96a2; --line:#2a343f; --line-2:#3a4552;
+    --accent:#5b9cf0; --accent-soft:#182a44; --copper:#e2823f; --copper-soft:#3a271a;
+    --hero:#0b1a33; --hero-ink:#eaf1fb; --hero-grid:rgba(255,255,255,.06);
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --grid:#2c2c2a; --axis:#383835; --viz-muted:#898781;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0e1319; --paper:#161c24; --paper-2:#1d2530;
+  --ink:#edf1f5; --ink-2:#b9c3cd; --muted:#8b96a2; --line:#2a343f; --line-2:#3a4552;
+  --accent:#5b9cf0; --accent-soft:#182a44; --copper:#e2823f; --copper-soft:#3a271a;
+  --hero:#0b1a33; --hero-ink:#eaf1fb; --hero-grid:rgba(255,255,255,.06);
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --grid:#2c2c2a; --axis:#383835; --viz-muted:#898781;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0 80px}
+h1,h2,h3,h4{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-weight:700;line-height:1.05;text-wrap:balance;margin:0}
+h2{font-size:clamp(30px,4vw,42px);letter-spacing:.005em;margin-block:0 6px}
+h3{font-size:clamp(22px,2.6vw,27px);margin-block:34px 10px}
+h4{font-size:19px;margin-block:22px 8px;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600}
+p{margin:0 0 14px;max-width:72ch}
+ul,ol{margin:0 0 14px;padding-left:22px;max-width:76ch}
+li{margin-bottom:6px}
+li>ul{margin-top:6px}
+strong{font-weight:600}
+a{color:var(--accent)}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+code{background:var(--paper-2);padding:1px 5px;border-radius:4px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);font-weight:500}
+section{padding-block:44px 8px;border-top:1px solid var(--line);scroll-margin-top:70px}
+section:first-of-type{border-top:0}
+.lead{font-size:18px;color:var(--ink-2);max-width:70ch}
+.tabnum{font-variant-numeric:tabular-nums}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+.nav ul{list-style:none;display:flex;gap:6px;overflow-x:auto;padding:10px 0;margin:0;max-width:none;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;font-size:13px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+.nav a:hover,.nav a:focus-visible{color:var(--accent);border-color:var(--accent);outline:none}
+
+/* hero */
+.hero{margin:22px 0 10px;background:var(--hero);color:var(--hero-ink);border-radius:14px;padding:clamp(28px,5vw,56px) clamp(22px,5vw,56px);position:relative;overflow:hidden;
+  background-image:linear-gradient(var(--hero-grid) 1px,transparent 1px),linear-gradient(90deg,var(--hero-grid) 1px,transparent 1px);background-size:32px 32px}
+.hero .eyebrow{color:#f0a36b}
+.hero h1{font-size:clamp(46px,8vw,96px);line-height:.95;letter-spacing:.005em;margin:10px 0 18px;max-width:14ch}
+.hero p{color:#c9d6e8;font-size:clamp(16px,1.6vw,19px);max-width:64ch}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:30px}
+.tile{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:14px 16px}
+.tile .v{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:38px;line-height:1;color:#fff}
+.tile .k{font-size:12.5px;color:#b9c9df;margin-top:6px;line-height:1.35}
+
+/* cards / callouts */
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:16px 0 22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;box-shadow:var(--shadow)}
+.card h4{margin-top:0}
+.card p,.card ul{font-size:15px}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+.callout{border-left:4px solid var(--copper);background:var(--copper-soft);padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;max-width:80ch}
+.callout.blue{border-left-color:var(--accent);background:var(--accent-soft)}
+.callout p:last-child{margin-bottom:0}
+.pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;padding:2px 8px;border-radius:999px;border:1px solid var(--line-2);color:var(--ink-2);background:var(--paper);white-space:nowrap}
+.pill.p1{border-color:var(--copper);color:var(--copper)}
+.pill.p2{border-color:var(--accent);color:var(--accent)}
+.pill.p3{border-color:var(--muted);color:var(--muted)}
+
+/* tables */
+.tbl{overflow-x:auto;margin:14px 0 22px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--paper-2);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.kw{font-family:"IBM Plex Mono",monospace;font-size:13px}
+.tbl.compact td,.tbl.compact th{padding:6px 10px;font-size:13px}
+.total td{font-weight:600;background:var(--paper-2)}
+
+/* charts */
+.fig{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px 10px;margin:16px 0 22px}
+.fig .t{font-weight:600;font-size:15px;margin-bottom:2px}
+.fig .s{font-size:13px;color:var(--muted);margin-bottom:10px}
+.fig svg{width:100%;height:auto;display:block;font-family:"IBM Plex Sans",system-ui,sans-serif}
+.fig .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink-2);margin-top:8px}
+.fig .legend span{display:inline-flex;align-items:center;gap:6px}
+.fig .legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12.5px;padding:7px 10px;border-radius:6px;box-shadow:var(--shadow);white-space:nowrap;transform:translate(-50%,-115%);opacity:0;transition:opacity .12s}
+.figwrap{position:relative}
+
+/* campaign blocks */
+.camp{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:18px 0;overflow:hidden;box-shadow:var(--shadow)}
+.camp header{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;padding:14px 18px;background:var(--paper-2);border-bottom:1px solid var(--line)}
+.camp header h4{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:26px}
+.camp header .meta{font-size:13px;color:var(--ink-2);font-family:"IBM Plex Mono",monospace}
+.camp .body{display:grid;grid-template-columns:1.1fr 1fr;gap:0}
+.camp .col{padding:14px 18px;font-size:14.5px}
+.camp .col+.col{border-left:1px solid var(--line)}
+.camp .col h5{margin:0 0 6px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.camp .col h5+ul,.camp .col h5+p,.camp .col h5+pre{margin-top:0}
+.camp .col ul{padding-left:18px;margin-bottom:12px}
+.camp .col li{margin-bottom:3px}
+.ad{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--paper-2);border-radius:8px;padding:10px 12px;margin:0 0 12px;white-space:pre-wrap;line-height:1.5;color:var(--ink)}
+.ad b{color:var(--copper);font-weight:500}
+@media (max-width:760px){.camp .body{grid-template-columns:1fr}.camp .col+.col{border-left:0;border-top:1px solid var(--line)}}
+
+/* landing page wireframe */
+.wire{display:grid;grid-template-columns:270px 1fr;gap:22px;align-items:start;margin:18px 0 26px}
+.phone{background:var(--ink);border-radius:26px;padding:10px;box-shadow:var(--shadow);max-width:100%}
+.screen{background:var(--paper);border-radius:18px;overflow:hidden;font-size:11px;line-height:1.3;color:var(--ink)}
+.screen .z{padding:8px 10px;border-bottom:1px dashed var(--line-2)}
+.screen .z small{display:block;color:var(--copper);font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.screen .btn{display:inline-block;background:var(--copper);color:#fff;border-radius:6px;padding:5px 8px;font-weight:600;margin:3px 3px 0 0}
+.screen .btn.o{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.screen .bar{background:var(--hero);color:#fff;padding:8px 10px;display:flex;justify-content:space-between;font-weight:600}
+.wire ol{font-size:14.5px}
+@media (max-width:700px){.wire{grid-template-columns:1fr}.phone{max-width:300px}}
+
+/* timeline */
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0 22px}
+.phase{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;border-top:4px solid var(--accent)}
+.phase.p0{border-top-color:var(--copper)}
+.phase .when{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.phase h4{margin:4px 0 8px}
+.phase ul{font-size:14px;padding-left:18px;margin:0}
+
+/* negatives */
+.negs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0 22px}
+.neg{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.neg h5{margin:0 0 6px;font-size:13px;font-weight:600}
+.neg p{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-2);margin:0;line-height:1.6}
+
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 20px}
+.kpi div{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13px}
+.kpi b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:700;line-height:1.1;color:var(--copper)}
+.foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<nav class="nav" aria-label="Разделы">
+<ul>
+<li><a href="#tldr">Коротко</a></li>
+<li><a href="#data">Данные</a></li>
+<li><a href="#principles">Принципы</a></li>
+<li><a href="#foundation">Неделя 0</a></li>
+<li><a href="#site">Сайт и LP</a></li>
+<li><a href="#structure">Структура аккаунта</a></li>
+<li><a href="#inside">Внутри кампаний</a></li>
+<li><a href="#negatives">Негативы</a></li>
+<li><a href="#bids">Ставки и бюджет</a></li>
+<li><a href="#forecast">Прогноз</a></li>
+<li><a href="#ops">90 дней</a></li>
+<li><a href="#team">Команда и риски</a></li>
+<li><a href="#files">Файлы</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<div class="eyebrow">Google Ads · Plumbing &amp; Drain · 5 гео · запуск с первого месяца</div>
+<h1>Plumbing Ads Blueprint</h1>
+<p>Полный план: что я бы сделал, будь это мой клиент и моя команда. Построено на ваших пяти выгрузках Keyword Planner (699 ключей × 5 локаций, сентябрь 2025 – август 2026), а не на общих словах. Всё, что ниже, можно начинать собирать завтра.</p>
+<div class="tiles">
+<div class="tile"><div class="v tabnum">114 450</div><div class="k">запросов в месяц по вашему списку, 5 локаций</div></div>
+<div class="tile"><div class="v tabnum">75 560</div><div class="k">из них с коммерческим намерением — их и покупаем (66%)</div></div>
+<div class="tile"><div class="v tabnum">14 + LSA</div><div class="k">Search-кампаний в первый месяц + Local Services Ads</div></div>
+<div class="tile"><div class="v tabnum">$60–90</div><div class="k">целевая цена лида в месяц 1, $45–70 к месяцу 3–6</div></div>
+</div>
+</div>
+
+<!-- ================= TL;DR ================= -->
+<section id="tldr">
+<div class="eyebrow">Ответ в двух минутах</div>
+<h2>Что я бы сделал</h2>
+<p class="lead">Лучшие результаты в plumbing получаются не от «секретной настройки», а от того, что все семь звеньев цепи сделаны на десятку одновременно: трекинг, телефон, оффер, посадочная, структура, ставки, скорость реакции. Ниже каждое звено расписано. Если коротко:</p>
+<ol>
+<li><strong>Неделя 0, до первого доллара.</strong> Коллтрекинг с записью и оценкой звонков, офлайн-конверсии из CRM в Google Ads, диспетчер 24/7 (или answering service), Google Business Profile и Local Services Ads (Google Guaranteed), три оффера-магнита, 50+ свежих отзывов в работе.</li>
+<li><strong>Сайт как машина конверсии,</strong> а не визитка: 1 000+ страниц «услуга × район» на статике, скорость LCP до 1,2 с на мобильном, липкая кнопка звонка, онлайн-запись за 60 секунд, прозрачные цены, живые отзывы. Отдельная посадочная под каждую кампанию.</li>
+<li><strong>14 Search-кампаний по услугам и срочности,</strong> а не одна «Plumbing». Emergency, Core Plumber (ядро + пригороды отдельно), Drain &amp; Clogs (ядро + пригороды), Sewer, Water Heaters, Leaks &amp; Kitec, Fixtures, Gas, Sump Pumps, Commercial, Competitor, Brand. Плюс LSA. Во втором месяце: Performance Max, Broad Match Scale, тест «исследовательских» запросов. В третьем: YouTube/Demand Gen ремаркетинг на дорогие услуги.</li>
+<li><strong>Портфельные стратегии tCPA</strong> в три корзины (Urgent / Core / Projects), чтобы маленькие кампании учились на общих данных. Старт с целью на 40% выше желаемой, снижение по 10–15% в неделю. К месяцу 3–4 переход на ценность сделки (tROAS) по данным из CRM.</li>
+<li><strong>Из 699 ключей: 402 в работу, 40 на тест со второго месяца, 136 в минус-слова, 90 «названий компаний» пропускаем.</strong> Карта по кампаниям и группам приложена файлом.</li>
+<li><strong>Ожидаемая экономика при бюджете $30K Search + $5K LSA в месяц:</strong> около 500 лидов, 260 записанных заказов, цена записанного заказа около $150, выручка порядка $220K, ROAS около 6x уже в первый месяц. К шестому месяцу цена лида падает на 30–35% за счёт обучения ставок, негативов и CRO-тестов.</li>
+<li><strong>Ограничение не в рекламе, а в машинах.</strong> Один экипаж закрывает 85–105 заказов в месяц. План на $35K требует минимум 3–4 экипажей и того, кто отвечает на телефон ночью.</li>
+</ol>
+<div class="callout"><p><strong>Про географию.</strong> В выгрузках нет названий городов, поэтому ниже они называются Гео 1–5. Гео 1 в 3–6 раз крупнее остальных: это ядро (по признакам в ключах вроде <code>kitec plumbing</code>, <code>emco</code>, <code>gas fitters</code>, <code>hot water tank</code>, <code>superior plumbing</code> это почти наверняка Канада, скорее всего Торонто и четыре города вокруг). Если это так, всё ниже применимо один в один; если нет, поменяются только названия и пара локальных офферов.</p></div>
+</section>
+
+<!-- ================= DATA ================= -->
+<section id="data">
+<div class="eyebrow">Раздел 1</div>
+<h2>Что говорят ваши данные</h2>
+<p class="lead">Пять файлов содержат один и тот же список из 699 ключей, снятый для пяти локаций. Это позволяет сравнить рынки напрямую.</p>
+
+<h3>Пять рынков</h3>
+<div class="tbl"><table>
+<thead><tr><th>Локация</th><th class="num">Запросов/мес (весь список)</th><th class="num">Доля</th><th class="num">«plumbing»</th><th class="num">«plumbers near me»</th><th class="num">Коммерческих</th><th class="num">Ставка top-of-page, взвеш. low → high</th></tr></thead>
+<tbody>
+<tr><td><strong>Гео 1</strong> (ядро)</td><td class="num">58 930</td><td class="num">51%</td><td class="num">6 600</td><td class="num">5 400</td><td class="num">72%</td><td class="num">$4.53 → $20.18</td></tr>
+<tr><td>Гео 2</td><td class="num">17 790</td><td class="num">16%</td><td class="num">1 600</td><td class="num">1 600</td><td class="num">69%</td><td class="num">$5.21 → $18.20</td></tr>
+<tr><td>Гео 3</td><td class="num">14 700</td><td class="num">13%</td><td class="num">1 300</td><td class="num">1 000</td><td class="num">59%</td><td class="num">$5.75 → $22.19</td></tr>
+<tr><td>Гео 4</td><td class="num">13 030</td><td class="num">11%</td><td class="num">1 000</td><td class="num">1 000</td><td class="num">60%</td><td class="num">$4.52 → $18.00</td></tr>
+<tr><td>Гео 5</td><td class="num">10 000</td><td class="num">9%</td><td class="num">720</td><td class="num">590</td><td class="num">54%</td><td class="num">$4.64 → $19.28</td></tr>
+<tr class="total"><td>Итого</td><td class="num">114 450</td><td class="num">100%</td><td class="num">11 220</td><td class="num">9 590</td><td class="num">66%</td><td class="num">≈ $4.8 → $19.9</td></tr>
+</tbody></table></div>
+<p>Вывод для структуры: Гео 1 заслуживает собственных кампаний по ядру и дренажу (там хватит конверсий для обучения ставок), а четыре пригорода лучше объединить в «Suburbs» с подстановкой города в объявление и отдельной посадочной на каждый город.</p>
+
+<h3>Куда уходит спрос</h3>
+<div class="fig figwrap">
+<div class="t">Запросов в месяц по будущим кампаниям (5 локаций, только целевые ключи)</div>
+<div class="s">Сумма средних месячных запросов ключей, которые попали в кампанию. Тестовые, минус-слова и «пустышки» не показаны (они дают ещё 38 890).</div>
+<svg id="bars" viewBox="0 0 900 372" role="img" aria-label="Горизонтальная диаграмма объёма запросов по кампаниям"></svg>
+</div>
+<p>Две вещи бросаются в глаза. Первая: почти половина коммерческого спроса это «плоские» запросы вроде <code>plumbers near me</code> и <code>plumbing</code>, без указания услуги. Именно там самая дорогая ставка ($27–35 за верх страницы) и самая высокая конкуренция. Вторая: дренаж и засоры дают в полтора раза больше запросов, чем все водонагреватели, протечки и канализация вместе, при ставке в полтора-два раза ниже. Дренаж это дешёвый объём, водонагреватели и канализация это дорогой чек. Их нельзя смешивать в одной кампании с одной целью по CPA.</p>
+
+<h3>Сколько стоит клик по типам запросов</h3>
+<div class="fig figwrap">
+<div class="t">Ставка за верх страницы, low → high (USD, взвешено по объёму, 5 локаций)</div>
+<div class="s">Low это нижняя граница попадания наверх, high это ставка сильных конкурентов. С Quality Score 8–10 реальный CPC обычно 40–60% от high.</div>
+<svg id="cpc" viewBox="0 0 900 400" role="img" aria-label="Диапазоны ставок по кластерам"></svg>
+</div>
+<p>Самые дорогие клики: emergency ($12.6 → $33.2), «near me» ($8.5 → $27.8), канализация ($6.1 → $29.9). Самые дешёвые с реальным намерением: сантехприборы и краны ($2.1 → $12.8) и водонагреватели ($3.4 → $13.6). Отдельные ключи выбиваются: <code>plumber nearby</code> до $56.8, <code>sewer line replacement cost</code> до $50.6, <code>sewer drain cleaning</code> до $45.9, <code>local plumber near me</code> до $46.8. Это не ошибка данных, а сигнал: там кто-то с очень хорошей юнит-экономикой уже стоит.</p>
+
+<h3>Сезонность</h3>
+<div class="fig figwrap">
+<div class="t">Индекс спроса по месяцам (максимум кластера = 100)</div>
+<div class="s">Сентябрь 2025 – август 2026, сумма по 5 локациям. Наведите на график.</div>
+<svg id="season" viewBox="0 0 900 340" role="img" aria-label="Линейный график сезонности трёх кластеров"></svg>
+<div class="legend"><span><i style="background:var(--s1)"></i>Дренаж и засоры</span><span><i style="background:var(--s2)"></i>Водонагреватели</span><span><i style="background:var(--s3)"></i>Протечки и замёрзшие трубы</span></div>
+<div class="tip" id="tip"></div>
+</div>
+<div class="tbl compact"><table>
+<thead><tr><th>Кластер</th><th>Пик</th><th>Дно</th><th>Что делать с бюджетом</th></tr></thead>
+<tbody>
+<tr><td>Дренаж и засоры</td><td>сентябрь (100), январь (86)</td><td>февраль, июнь (73–74)</td><td>Ровный спрос круглый год; в сентябре и январе +20% к бюджету</td></tr>
+<tr><td>Водонагреватели</td><td>январь–март (94–100)</td><td>август (65)</td><td>С декабря по март +35% к бюджету, оффер «установим сегодня»</td></tr>
+<tr><td>Протечки, замёрзшие трубы</td><td>январь (100), февраль (84)</td><td>июль–август (54–55)</td><td>Кампания «Frozen pipes» включается при прогнозе ниже −15°C</td></tr>
+<tr><td>Emergency</td><td>сентябрь (100)</td><td>февраль (30)</td><td>Не режем никогда: это самые дорогие, но самые «горячие» лиды</td></tr>
+<tr><td>Sump pumps</td><td>апрель (100), март (87)</td><td>ноябрь–декабрь (45–46)</td><td>Кампания живёт с февраля по июнь, остальное время минимальный бюджет</td></tr>
+<tr><td>Канализация</td><td>сентябрь (100)</td><td>февраль (43)</td><td>Осенние дожди = подтопления подвалов; готовим оффер по backwater valve заранее</td></tr>
+</tbody></table></div>
+<p>Сентябрьский всплеск в Гео 1 (84 410 запросов против обычных 55 000) выглядит как реальное событие вроде ливней и подтоплений. Именно такие недели приносят месячную прибыль за пять дней, если бюджет не упирается в лимит. В плане ниже предусмотрен «резервный» бюджет 15% под такие пики.</p>
+
+<h3>Что растёт и что падает год к году</h3>
+<div class="grid">
+<div class="card"><h4>Растёт</h4><ul>
+<li><code>water heater repair</code> +291%, <code>tankless water heater install</code> +200%, <code>water heater maintenance</code> +98%</li>
+<li><code>plumbing companies near me</code> +128%, <code>best plumbers near me</code> +69%</li>
+<li><code>drain cleaning</code> +62%, <code>emergency plumber</code> +48%, <code>water leak detection</code> +52%</li>
+<li><code>sump pumps</code> +47%, <code>toilet repair</code> +99%</li>
+</ul></div>
+<div class="card"><h4>Падает</h4><ul>
+<li><code>unclog toilet</code> −36%, <code>clogged toilet</code> −26%, <code>clogged drain</code> −32%</li>
+<li><code>household plumbing</code> −65% (и это не сервисный запрос)</li>
+<li><code>gas fitters</code> −35%, <code>commercial plumbing</code> −24%, <code>licensed plumber</code> −23%</li>
+</ul></div>
+<div class="card"><h4>Что это значит</h4><ul>
+<li>Водонагреватели это самый быстрорастущий дорогой сегмент: отдельная кампания, отдельная посадочная, финансирование в оффере.</li>
+<li>Люди всё чаще ищут «компанию», а не «как прочистить»: доверие (отзывы, лицензия, гарантия) в объявлении важнее цены.</li>
+<li>Падение «clogged toilet» это уход DIY-запросов в ИИ-ответы, а не падение спроса на сервис.</li>
+</ul></div>
+</div>
+
+<h3>Что в списке лишнее</h3>
+<p>Треть списка (38 890 запросов) покупать нельзя или рано. Самые объёмные «ловушки»: <code>sump pumps</code> (4 620, покупка насоса), <code>snaking a drain</code> (3 100, в основном DIY), <code>ptrap</code> (1 320), <code>rinnai tankless water heater</code> и <code>navien tankless water heater</code> (2 070, выбор бренда), <code>water closet</code> (930), <code>kitec plumbing</code> (930, но это исключение: тот, кто ищет Kitec, владелец дома с проблемой на $8–15K, поэтому Kitec идёт в работу с отдельной посадочной). У таких ключей нижняя ставка $0.1–0.8: на них стоят магазины, а не сантехники. Это самый быстрый способ распознать «товарный» запрос без чтения.</p>
+<p>Ещё 90 ключей вида <code>valley plumbing</code>, <code>johns plumbing</code>, <code>all star plumbing</code> по 30–50 запросов это названия компаний, которыми Keyword Planner добивает список. Их не берём и не минусуем: если какое-то из них реально конвертирует через broad match, увидим в поисковых запросах.</p>
+<p>Конкуренты, которых ищут по имени: Superior (320), Advanced (250), Master (230), Total (190), Precise (130), One Call (110), Mr Rooter (100), Roto-Rooter (270 суммарно с «$99 special» и «prices»). Это и есть те, кто платит $30+ за клик по «near me». Их имена нельзя писать в объявлениях, но ставить на них можно.</p>
+</section>
+
+<!-- ================= PRINCIPLES ================= -->
+<section id="principles">
+<div class="eyebrow">Раздел 2</div>
+<h2>Семь правил, по которым выигрывают в plumbing</h2>
+<p class="lead">За десять лет я видел сотни аккаунтов сантехников. Проигрывают почти всегда по одним и тем же причинам. Вот что отличает лучшие аккаунты.</p>
+<div class="grid">
+<div class="card"><h4>1. Считаем заказы, а не клики</h4><p>Google должен оптимизировать под «записанный заказ» и его сумму, а не под «звонок 10 секунд». Без записи звонков, их оценки и офлайн-импорта из CRM Smart Bidding учится на мусоре и находит дешёвых, но бесполезных лидов.</p></div>
+<div class="card"><h4>2. Телефон важнее ставок</h4><p>В plumbing 70–80% лидов это звонки с мобильного. Пропущенный звонок в 21:30 это $80 в мусор и клиент у конкурента через 40 секунд. Ответ живого человека 24/7 и обратный звонок по форме за 60 секунд поднимают результат сильнее любой оптимизации.</p></div>
+<div class="card"><h4>3. Разные услуги, разная экономика</h4><p>Дренаж за $99 и замена канализации за $9 000 не могут жить в одной кампании с одним tCPA. Структура по услугам и срочности даёт контроль бюджета и понятные цели по каждой линии.</p></div>
+<div class="card"><h4>4. Оффер решает больше, чем текст</h4><p>«$99 drain cleaning, cleared or free», «$0 dispatch fee with repair», «same-day or $50 off», «financing from $49/mo». Конкретное обещание в заголовке поднимает CTR и конверсию вдвое по сравнению с «quality service since 1995».</p></div>
+<div class="card"><h4>5. Посадочная под запрос, а не главная</h4><p>Человек с забитым унитазом должен увидеть слова «clogged toilet», цену и кнопку звонка в первую секунду. Главная страница с меню из 30 пунктов конвертирует в 2–3 раза хуже.</p></div>
+<div class="card"><h4>6. Local Services Ads это обязательно</h4><p>LSA стоит выше обычных объявлений, оплата за лид, а не за клик, бейдж Google Guaranteed. В plumbing это 20–40% всех лидов по самой низкой цене. Без LSA аккаунт заведомо не лучший.</p></div>
+<div class="card"><h4>7. Мощность ограничена машинами</h4><p>Реклама масштабируется за день, экипажи за месяцы. Бюджет считается от свободной мощности: примерно $8–10K рекламы на экипаж в месяц при полной загрузке.</p></div>
+</div>
+</section>
+
+<!-- ================= FOUNDATION ================= -->
+<section id="foundation">
+<div class="eyebrow">Раздел 3</div>
+<h2>Неделя 0: фундамент до первого доллара</h2>
+<p class="lead">Это 7–10 рабочих дней командой из четырёх человек. Пропустить любой пункт значит платить за трафик, который не превращается в деньги или не измеряется.</p>
+
+<h3>Трекинг и конверсии</h3>
+<div class="tbl"><table>
+<thead><tr><th>Действие-конверсия</th><th>Источник</th><th>Тип</th><th>Ценность</th><th>Как настроено</th></tr></thead>
+<tbody>
+<tr><td>Звонок из объявления ≥ 60 сек</td><td>Google call asset / call-only</td><td>Primary</td><td>$60 (средняя маржа лида)</td><td>Google forwarding number, порог 60 сек</td></tr>
+<tr><td>Звонок с сайта ≥ 60 сек</td><td>CallRail / CallTrackingMetrics, динамическая подмена номера (DNI)</td><td>Primary</td><td>$60</td><td>Пул из 20+ номеров на источник, запись, GCLID в CRM</td></tr>
+<tr><td>Квалифицированный звонок</td><td>ИИ-оценка звонка (Conversation Intelligence)</td><td>Primary с месяца 2</td><td>$120</td><td>Теги: новый клиент, в зоне, реальная услуга, записан</td></tr>
+<tr><td>Форма заявки</td><td>GTM → GA4 → Google Ads, Enhanced Conversions for Leads</td><td>Primary</td><td>$45</td><td>Хеш телефона и email; антиспам reCAPTCHA v3 + honeypot</td></tr>
+<tr><td>Онлайн-запись завершена</td><td>Виджет ServiceTitan / Housecall Pro / Jobber</td><td>Primary</td><td>$150</td><td>Событие booking_complete с датой и услугой</td></tr>
+<tr><td>Клик «Text us» / чат-лид</td><td>SMS-виджет, чат</td><td>Secondary → Primary если ≥ 15% лидов</td><td>$30</td><td>Считаем только после ответа клиента</td></tr>
+<tr><td>Записанный заказ (офлайн)</td><td>CRM → Offline Conversion Import по GCLID, ежедневно</td><td>Primary с месяца 2</td><td>$200</td><td>Статус «scheduled» в CRM</td></tr>
+<tr><td>Выполненный заказ с суммой</td><td>CRM → OCI с revenue</td><td>Primary с месяца 3 (tROAS)</td><td>Реальная сумма чека</td><td>Импорт после закрытия заказа, окно 90 дней</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>GA4 + GTM</strong> со всеми событиями, Consent Mode v2 (в Канаде достаточно базового баннера, но режим включаем сразу).</li>
+<li><strong>Один общий словарь</strong> «лид → квалифицированный → записан → выполнен → сумма» в CRM, чтобы отчёт агентства и отчёт владельца совпадали до доллара.</li>
+<li><strong>Защита от кликфрода</strong> (Lunio / ClickCease) с первого дня: в home services 8–15% кликов на дорогие ключи это конкуренты и боты.</li>
+<li><strong>Автоприменение рекомендаций Google выключено</strong>, доступ представителям Google только на просмотр.</li>
+</ul>
+
+<h3>Телефон и диспетчер</h3>
+<ul>
+<li>Живой ответ 24/7: ночной диспетчер или answering service с обучением по скрипту (Smith.ai, Ruby, локальные колл-центры). Цель: ответ до третьего гудка, доля отвеченных ≥ 95%.</li>
+<li>Пропущенный звонок → автоматический SMS через 30 секунд («Это [Компания], перезваниваем через 2 минуты. Что случилось?») и уведомление диспетчеру.</li>
+<li>Форма → обратный звонок за 60 секунд (speed-to-lead). Лид, которому перезвонили через 5 минут, записывается в 3 раза реже, чем через 1 минуту.</li>
+<li>Скрипт CSR по методике «сочувствие → диагностика → цена выезда → два слота на выбор». Цель записи: ≥ 70% квалифицированных звонков. Еженедельный разбор 20 записей.</li>
+</ul>
+
+<h3>Google Business Profile и Local Services Ads</h3>
+<ul>
+<li>GBP на каждую локацию с реальным адресом (для LSA нужен именно он): категории Plumber + Drain cleaning service + Water heater installation, услуги с ценами, фото экипажей и работ, еженедельные посты, ответы на все отзывы.</li>
+<li>LSA: проверка лицензии, страховки, background check, 5+ отзывов для старта. Ставка «максимум лидов» первые 2 недели, потом ручная ставка за лид $35–70. Отвечать на 100% звонков LSA: доля ответов влияет на ранжирование. Спорить невалидные лиды еженедельно.</li>
+<li>Отзывы: SMS с ссылкой после каждого заказа, цель 50+ в месяц на ядро и 15+ на пригород. Рейтинг ≥ 4.8 это прямая скидка на CPC через CTR.</li>
+</ul>
+
+<h3>Три оффера-магнита</h3>
+<div class="grid">
+<div class="card"><h4>Дренаж</h4><p><strong>$99 drain cleaning, any drain. Cleared today or you don't pay.</strong> Плюс бесплатная камера-инспекция при засоре main line. Это входной билет: маржа маленькая, но 30–40% визитов превращаются в hydro jetting, замену секций или backwater valve.</p></div>
+<div class="card"><h4>Всё остальное</h4><p><strong>$0 dispatch fee with any repair + upfront price before we start.</strong> Убирает главный страх звонка. Вторая строка: «Same-day or $50 off».</p></div>
+<div class="card"><h4>Дорогие проекты</h4><p><strong>Water heater installed today, financing from $49/mo, 10-year warranty.</strong> Для канализации и Kitec: «free camera inspection / free Kitec inspection + $500 off replacement». Плюс помощь с городской субсидией на backwater valve и sump pump, если это Торонто.</p></div>
+</div>
+</section>
+
+<!-- ================= SITE ================= -->
+<section id="site">
+<div class="eyebrow">Раздел 4</div>
+<h2>Сайт и посадочные страницы</h2>
+<p class="lead">Раз можно построить любой сайт за пару дней, строим не «сайт», а систему из 1 000+ посадочных, где каждая отвечает на один запрос в одном районе. Для рекламы это Quality Score 8–10 и конверсия 15%+, для SEO это долгосрочный бесплатный трафик по тем же запросам.</p>
+
+<h3>Архитектура</h3>
+<div class="tbl"><table>
+<thead><tr><th>Уровень</th><th>Страниц</th><th>Пример URL</th><th>Для чего</th></tr></thead>
+<tbody>
+<tr><td>Хабы услуг</td><td class="num">25</td><td class="kw">/drain-cleaning, /water-heater-repair, /kitec-replacement</td><td>Финальные URL для кампаний «All geos»</td></tr>
+<tr><td>Города</td><td class="num">5</td><td class="kw">/plumber/{city}</td><td>Финальные URL Core-кампаний</td></tr>
+<tr><td>Услуга × город</td><td class="num">125</td><td class="kw">/drain-cleaning/{city}</td><td>Финальные URL для Drain / Emergency / Water Heaters по городу</td></tr>
+<tr><td>Услуга × район</td><td class="num">≈ 900</td><td class="kw">/drain-cleaning/{city}/{neighbourhood}</td><td>SEO-длинный хвост; в рекламе только для гипер-локальных групп</td></tr>
+<tr><td>Оффер-страницы</td><td class="num">6</td><td class="kw">/99-drain-special, /financing, /pricing, /why-us</td><td>Sitelinks, кампании Competitor и Research</td></tr>
+<tr><td>Доверие</td><td class="num">8</td><td class="kw">/reviews, /team, /guarantee, /licenses</td><td>Sitelinks и ремаркетинг</td></tr>
+</tbody></table></div>
+<p>Условие, без которого 1 000 страниц вредят: каждая страница «услуга × район» несёт уникальную локальную суть, а не переставленные слова. Реальные заказы в этом районе с фото, отзывы жителей района, типовые проблемы домов этого района (глиняные канализационные трубы в домах до 1960-х, Kitec в кондо 1995–2007, зоны подтопления подвалов), время подъезда, ближайший экипаж. Это генерируется из CRM и базы знаний, а не из шаблона «Мы лучшие сантехники в {район}».</p>
+
+<h3>Анатомия посадочной (мобильная версия, как её видит человек с засором)</h3>
+<div class="wire">
+<div class="phone"><div class="screen">
+<div class="bar"><span>Logo · 4.9★ 1 240</span><span>📞 Call</span></div>
+<div class="z"><small>1. Первый экран</small><strong>Clogged Drain in {City}? Cleared Today for $99</strong><br>Or you don't pay · Licensed &amp; insured · Plumber in 60–90 min<br><span class="btn">Call (416) 555-0199</span><span class="btn o">Book online</span></div>
+<div class="z"><small>2. Доверие</small>✔ Google Guaranteed ✔ Lic. #T87-4412 ✔ WSIB &amp; $5M insured ✔ No overtime fees</div>
+<div class="z"><small>3. Что мы сделаем</small>Snaking · Hydro jetting · Camera inspection included · Kitchen, tub, toilet, main line</div>
+<div class="z"><small>4. Цена</small>Drain cleaning $99 · Main line $249–$449 · Hydro jet $349–$599 · Upfront quote before we start</div>
+<div class="z"><small>5. Отзывы района</small>«Came at 11pm, kitchen sink cleared in 30 min» — Maria, {Neighbourhood} · 3 days ago</div>
+<div class="z"><small>6. Экипаж</small>Фото 3 техников · «Your plumber today: Dan, 11 yrs»</div>
+<div class="z"><small>7. Как это работает</small>Call → dispatcher gives ETA → tech quotes on site → fixed → you pay only if cleared</div>
+<div class="z"><small>8. FAQ + карта зоны</small>Do you use chemicals? How fast? Weekend price? Service area map</div>
+<div class="bar"><span>📞 Call now</span><span>💬 Text</span><span>📅 Book</span></div>
+</div></div>
+<ol>
+<li><strong>Первый экран за 1 секунду:</strong> заголовок повторяет запрос и город (подстановка через параметры URL из объявления), оффер, две кнопки. Номер телефона огромный, tap-to-call, подменяется коллтрекингом.</li>
+<li><strong>Липкая нижняя панель</strong> Call / Text / Book всегда на экране. Это даёт +20–30% к конверсии на мобильном.</li>
+<li><strong>Форма из трёх полей</strong> (имя, телефон, что случилось) с мгновенным SMS-ответом. Каждое лишнее поле минус 10% заявок.</li>
+<li><strong>Цены показываем.</strong> Диапазоны честные. Страх «сколько это будет стоить» главная причина не звонить.</li>
+<li><strong>Отзывы живые:</strong> подтягиваются из Google по API, фильтруются по услуге и району.</li>
+<li><strong>Скорость:</strong> статический сайт (Astro / Next.js static export) на CDN, изображения WebP/AVIF, ноль тяжёлых скриптов, коллтрекинг подгружается асинхронно. Цель: LCP ≤ 1.2 с на 4G, вес страницы ≤ 400 KB.</li>
+<li><strong>Emergency-версия</strong> страницы без формы вообще: только звонок, ETA и «мы едем». Ночью объявления ведут туда.</li>
+</ol>
+</div>
+
+<h3>План CRO-тестов (по одному в две недели на самой трафиковой странице)</h3>
+<ol>
+<li>Оффер в заголовке: «$99 cleared or free» против «$0 dispatch fee» против «Same-day or $50 off».</li>
+<li>Кнопка «Book online» рядом со звонком против только звонок (ночью и днём отдельно).</li>
+<li>Цены на первом экране против цен ниже.</li>
+<li>Фото техника с именем на первом экране против без.</li>
+<li>Длина формы: 3 поля против 2 (телефон + что случилось).</li>
+<li>Чат-виджет против SMS-кнопки.</li>
+</ol>
+<p>Инструменты: VWO или Convert для тестов, Microsoft Clarity для записей сессий и тепловых карт. Победитель фиксируется при 95% значимости и не менее 150 конверсий на вариант.</p>
+</section>
+
+<!-- ================= STRUCTURE ================= -->
+<section id="structure">
+<div class="eyebrow">Раздел 5</div>
+<h2>Структура аккаунта</h2>
+<p class="lead">Логика деления: сначала по срочности и экономике услуги, потом по географии, только там, где хватает объёма для обучения ставок. Все кампании Search используют геотаргетинг «Presence» (только физически находящиеся), не «Presence or interest». Язык: английский. Сети: только поиск, без партнёров и КМС.</p>
+
+<div class="tbl"><table>
+<thead><tr><th>Кампания</th><th>Тип</th><th>Гео</th><th>Запуск</th><th>Стратегия ставок</th><th class="num">Старт tCPA</th><th class="num">Бюджет</th><th>Посадочная</th></tr></thead>
+<tbody>
+<tr><td><span class="pill p1">P1</span> S | Emergency 24/7</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Портфель tCPA «Urgent»</td><td class="num">$110</td><td class="num">10%</td><td class="kw">/emergency-plumber/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Core Plumber – Гео 1</td><td>Search</td><td>Гео 1</td><td>Месяц 1</td><td>Портфель tCPA «Core»</td><td class="num">$95</td><td class="num">22%</td><td class="kw">/plumber/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Core Plumber – Suburbs</td><td>Search</td><td>Гео 2–5</td><td>Месяц 1</td><td>Портфель tCPA «Core»</td><td class="num">$90</td><td class="num">13%</td><td class="kw">/plumber/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Drain Cleaning &amp; Clogs – Гео 1</td><td>Search</td><td>Гео 1</td><td>Месяц 1</td><td>Портфель tCPA «Urgent»</td><td class="num">$75</td><td class="num">14%</td><td class="kw">/drain-cleaning/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Drain Cleaning &amp; Clogs – Suburbs</td><td>Search</td><td>Гео 2–5</td><td>Месяц 1</td><td>Портфель tCPA «Urgent»</td><td class="num">$70</td><td class="num">8%</td><td class="kw">/drain-cleaning/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Sewer &amp; Main Line</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Портфель tCPA «Urgent»</td><td class="num">$140</td><td class="num">6%</td><td class="kw">/sewer-line-repair/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Water Heaters</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Портфель tCPA «Projects»</td><td class="num">$85</td><td class="num">9%</td><td class="kw">/water-heater-repair-installation/{city}</td></tr>
+<tr><td><span class="pill p1">P1</span> S | Leaks, Pipes &amp; Kitec</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Портфель tCPA «Urgent»</td><td class="num">$95</td><td class="num">6%</td><td class="kw">/leak-repair/{city}, /kitec-replacement</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Toilets, Faucets &amp; Fixtures</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Портфель tCPA «Projects»</td><td class="num">$60</td><td class="num">5%</td><td class="kw">/toilet-repair, /faucet-repair, /garbage-disposal</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Gas Lines &amp; Fitters</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Портфель tCPA «Projects»</td><td class="num">$80</td><td class="num">2%</td><td class="kw">/gas-line-installation/{city}</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Sump Pump &amp; Basement</td><td>Search</td><td>Все 5</td><td>Месяц 1 (мало) → февраль–май</td><td>Портфель tCPA «Projects»</td><td class="num">$80</td><td class="num">2% → 6%</td><td class="kw">/sump-pump-installation/{city}</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Commercial</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Max Conversions, свой бюджет</td><td class="num">$150</td><td class="num">2%</td><td class="kw">/commercial-plumbing</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Competitor</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Max Clicks, потолок $6</td><td class="num">—</td><td class="num">1%</td><td class="kw">/why-us</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Brand</td><td>Search</td><td>Все 5</td><td>Месяц 1</td><td>Target IS 90% abs. top</td><td class="num">—</td><td class="num">1%</td><td class="kw">/</td></tr>
+<tr><td><span class="pill p1">P1</span> LSA | Local Services Ads</td><td>LSA</td><td>По локации</td><td>Неделя 0–1</td><td>Max leads → ставка за лид</td><td class="num">$35–70/лид</td><td class="num">отдельно $3–6K</td><td>Профиль GBP</td></tr>
+<tr><td><span class="pill p2">P2</span> PMax | Lead Gen</td><td>Performance Max</td><td>Все 5</td><td>Месяц 2</td><td>tCPA свой</td><td class="num">$90</td><td class="num">5–8%</td><td>Asset groups по услугам</td></tr>
+<tr><td><span class="pill p2">P2</span> S | Broad Match Scale</td><td>Search</td><td>Все 5</td><td>Месяц 2</td><td>tCPA свой (+15% к core)</td><td class="num">$105</td><td class="num">5–8%</td><td>Те же LP, что ядро</td></tr>
+<tr><td><span class="pill p3">P3</span> S | Research &amp; Pricing (тест)</td><td>Search</td><td>Гео 1</td><td>Месяц 2</td><td>tCPA свой</td><td class="num">$60</td><td class="num">3%</td><td class="kw">/pricing, /water-heater-cost</td></tr>
+<tr><td><span class="pill p3">P3</span> DG/YT | Remarketing High Ticket</td><td>Demand Gen / YouTube</td><td>Все 5</td><td>Месяц 3</td><td>tCPA</td><td class="num">$120</td><td class="num">3%</td><td>WH / Sewer / Kitec</td></tr>
+</tbody></table></div>
+
+<h3>Три портфельные стратегии вместо 14 одиночных</h3>
+<div class="grid">
+<div class="card"><h4>Портфель «Urgent»</h4><p>Emergency, Drain (обе), Sewer, Leaks &amp; Kitec. Общая модель: человек с водой на полу, конверсия через звонок, решение за минуты. Ограничение максимальной ставки $45. Здесь мы готовы платить дороже за лид, потому что закрываемость 70%+.</p></div>
+<div class="card"><h4>Портфель «Core»</h4><p>Core Plumber Гео 1 и Suburbs. Самый большой объём и самая дорогая конкуренция. Ограничение ставки $25. Цель CPA чуть ниже, чем в Urgent: часть запросов «near me» это сравнение цен.</p></div>
+<div class="card"><h4>Портфель «Projects»</h4><p>Water Heaters, Fixtures, Gas, Sump. Решение принимается за часы или дни, конверсия через форму и онлайн-запись чаще, чем звонок. Ограничение ставки $28. С месяца 3 переводим на tROAS: сюда придут самые крупные чеки.</p></div>
+</div>
+<p>Почему портфель: у Sewer 1 470 запросов в месяц на пять городов, одиночная кампания наберёт 10–15 конверсий и будет вечно «в обучении». В портфеле она использует сигналы соседних кампаний с похожим поведением. Бюджеты при этом остаются раздельными: канализация не съест дренаж.</p>
+
+<h3>Общие настройки для всех Search-кампаний</h3>
+<ul>
+<li><strong>Гео:</strong> города по границам плюс радиус 5–8 км вокруг них, исключены соседние города, куда не едем. Presence only. Отчёт по «user location» еженедельно, чтобы поймать утечку.</li>
+<li><strong>Устройства:</strong> без корректировок в Smart Bidding, но объявления и посадочные проектируются mobile-first, звонки как основная конверсия. В Emergency 80%+ мобильного трафика.</li>
+<li><strong>Расписание:</strong> 24/7 везде, где отвечают на телефон. Если ночью отвечает автоответчик, Core и Projects с 23:00 до 6:00 останавливаем (Smart Bidding сам не умеет «не показываться, когда никто не берёт трубку»). Emergency не останавливаем никогда.</li>
+<li><strong>Аудитории в режиме наблюдения:</strong> in-market «Plumbing services», «Home improvement», собственные списки посетителей, конвертеров (исключаем 30 дней из Core и Drain, оставляем в Projects), похожие на конвертеров через PMax сигналы.</li>
+<li><strong>Типы соответствия:</strong> Exact для голов (объём ≥ 100) плюс Phrase для всего остального. Broad только во второй месяц в отдельной кампании на проверенных конвертерах.</li>
+<li><strong>Активы:</strong> call asset с расписанием, location (через GBP), 8+ sitelinks (Emergency, $99 Drain, Water Heaters, Reviews, Financing, Book Online, Coupons, Service Area), callouts, structured snippets (Services), price assets по услугам, promotion asset под текущий оффер, image assets (экипажи, трак), business logo и name, lead form asset только в Projects.</li>
+<li><strong>Объявления:</strong> 2 RSA на группу (одно с закреплённым заголовком-оффером, одно без закреплений), плюс call-only в Emergency. Подстановка города через <code>{LOCATION(City)}</code>, ключа через DKI только в Drain-группах, где это безопасно.</li>
+</ul>
+</section>
+
+<!-- ================= INSIDE ================= -->
+<section id="inside">
+<div class="eyebrow">Раздел 6</div>
+<h2>Внутри кампаний</h2>
+<p class="lead">Ниже разобраны шесть кампаний первого приоритета так, как они будут выглядеть в Google Ads Editor: группы, ключи из вашего списка, объявления, активы, ставки. Полный список из 402 целевых ключей с привязкой к группам в приложенном файле. Лимиты объявлений: заголовок 30 символов, описание 90.</p>
+
+<div class="camp">
+<header><h4>S | Emergency 24/7</h4><span class="meta">10 ключей · 1 860 запр./мес · портфель Urgent · старт tCPA $110 · потолок CPC $35 · 10% бюджета</span></header>
+<div class="body">
+<div class="col">
+<h5>Группы и ключи</h5>
+<ul>
+<li><strong>Emergency Plumber</strong> — <span class="mono">[emergency plumber] "emergency plumbing services" "emergency plumbing"</span> (910)</li>
+<li><strong>Emergency – Near Me</strong> — <span class="mono">[emergency plumber near me] "24 7 plumber near me" "24 hour plumber near me" "same day plumber near me" "plumbers near me now"</span> (660)</li>
+<li><strong>24 Hour / After Hours</strong> — <span class="mono">[24 hour plumber] "24 7 plumber" "after hours plumber" "weekend plumber" "plumber open now"</span> (210)</li>
+<li><strong>Same Day / Urgent</strong> — <span class="mono">"same day plumber" "urgent plumber" "plumber tonight"</span> (80)</li>
+<li><strong>Burst Pipe / Flood</strong> — добавить: <span class="mono">"burst pipe plumber" "flooded basement plumber" "water everywhere plumber"</span></li>
+</ul>
+<h5>Ставки и расписание</h5>
+<ul>
+<li>24/7 без исключений; корректировка +30% с 18:00 до 7:00 и в выходные через отдельную кампанию-клон «Emergency – Nights», если tCPA не даёт нужный охват.</li>
+<li>Цель: impression share на абсолютном верху ≥ 60% в Гео 1. Это единственная кампания, где мы сознательно переплачиваем за позицию: ночью звонят первому.</li>
+<li>Конверсии: только звонки ≥ 60 сек и записанный заказ. Формы отключены как primary.</li>
+</ul>
+<h5>Посадочная</h5>
+<p><span class="mono">/emergency-plumber/{city}</span>: без формы, огромный номер, «Plumber on the way in 60–90 min», «No overtime fees», живой счётчик «3 crews available now», отзывы про ночные вызовы.</p>
+</div>
+<div class="col">
+<h5>RSA (заголовок 1 закреплён)</h5>
+<div class="ad"><b>H1*</b> Emergency Plumber – 24/7
+<b>H</b>  Plumber at Your Door in 60 Min
+<b>H</b>  No Overtime Fees, Ever
+<b>H</b>  Real Person Answers 24/7
+<b>H</b>  Licensed &amp; Insured Plumbers
+<b>H</b>  4.9★ From 1,200+ Reviews
+<b>H</b>  {LOCATION(City):Local} Emergency Plumbing
+<b>H</b>  Burst Pipe? We're On Our Way
+<b>H</b>  $0 Dispatch Fee With Repair
+<b>H</b>  Upfront Price Before We Start
+<b>D</b>  Burst pipe or backed-up drain? Licensed plumbers on the way in 60 min. Upfront pricing.
+<b>D</b>  Real dispatcher answers 24/7. No overtime charges nights or weekends. Call now.
+<b>D</b>  Same-day emergency plumbing across {LOCATION(City):your area}. 100% satisfaction guarantee.
+<b>D</b>  Water heater, sewer backup, frozen pipes. One call, fixed tonight.</div>
+<h5>Call-only объявление</h5>
+<div class="ad"><b>H</b>  24/7 Emergency Plumber
+<b>H</b>  On Our Way in 60 Min
+<b>D</b>  Licensed plumbers, no overtime fees. Real person answers now.
+<b>D</b>  Upfront price before we start. Call for a 60-minute ETA.</div>
+<h5>Активы</h5>
+<p>Callouts: No Overtime Fees · 60-Min ETA · Licensed &amp; Insured · Open 24/7. Sitelinks: Burst Pipes, Sewer Backup, No Hot Water, Frozen Pipes. Structured snippet Services. Промо-актив не используем: срочному клиенту нужна скорость, а не скидка.</p>
+</div>
+</div>
+</div>
+
+<div class="camp">
+<header><h4>S | Core Plumber – Гео 1 и Suburbs</h4><span class="meta">48 ключей · 36 810 запр./мес · портфель Core · старт tCPA $95 / $90 · потолок CPC $25 / $22 · 22% + 13% бюджета</span></header>
+<div class="body">
+<div class="col">
+<h5>Группы и ключи</h5>
+<ul>
+<li><strong>Plumber Near Me</strong> — <span class="mono">[plumbers near me] [near me plumber] [plumbing companies near me] [plumbing services near me] "best plumbers near me" "local plumbers" "plumbing repair near me" "licensed plumbers near me" "plumbers in my area" "plumber nearby"</span> (21 850)</li>
+<li><strong>Head Terms</strong> — <span class="mono">[plumbing] [plumber] [plumbers] "find a plumber" "need a plumber"</span> (11 410). Отдельная группа, отдельный лимит: <code>plumbing</code> самый «мутный» ключ списка, здесь будет 60% всех минус-слов.</li>
+<li><strong>Company &amp; Services</strong> — <span class="mono">[plumbing services] [plumbing companies] "plumbing contractors" "plumbing company"</span> (1 430)</li>
+<li><strong>Pricing &amp; Affordable</strong> — <span class="mono">[plumber cost] "plumber cost per hour" "affordable plumbers near me" "affordable plumbing" "plumbers near me prices"</span> (1 290) → посадочная <span class="mono">/pricing</span></li>
+<li><strong>Best / Licensed / Reviews</strong> — <span class="mono">"licensed plumber" "best plumbers" "top rated plumbers" "good plumbers near me"</span> (370) → посадочная <span class="mono">/reviews</span></li>
+<li><strong>Plumbing Repair</strong>, <strong>Residential</strong> — остаток (460)</li>
+</ul>
+<h5>Гео-логика</h5>
+<ul>
+<li>Гео 1: одна кампания, одна посадочная <span class="mono">/plumber/{city}</span>.</li>
+<li>Suburbs: те же группы, но по одной группе на город внутри каждой темы («Near Me – Гео 2», «Near Me – Гео 3»…) с финальным URL на страницу этого города. Это даёт локальную посадочную без дробления кампаний.</li>
+</ul>
+</div>
+<div class="col">
+<h5>RSA «Near Me» (H1 закреплён, H2 закреплён под город)</h5>
+<div class="ad"><b>H1*</b> Licensed Plumber Near You
+<b>H2*</b> {LOCATION(City):Local} Plumbing Company
+<b>H</b>  Same-Day, Upfront Pricing
+<b>H</b>  4.9★ From 1,200+ Reviews
+<b>H</b>  $0 Dispatch Fee With Repair
+<b>H</b>  Book Online in 60 Seconds
+<b>H</b>  Plumbers Since 2009
+<b>H</b>  Fully Insured &amp; Guaranteed
+<b>H</b>  Drains, Leaks, Water Heaters
+<b>H</b>  Real Person Answers 24/7
+<b>D</b>  Drains, leaks, toilets, water heaters. Licensed plumbers, upfront pricing, 100% guarantee.
+<b>D</b>  Real person answers 24/7. Same-day appointments across {LOCATION(City):your area}. Book online.
+<b>D</b>  No overtime fees. Free estimate on installs. Financing available. Call or book now.
+<b>D</b>  Google Guaranteed plumbers with 1,200+ five-star reviews. See why neighbours choose us.</div>
+<h5>RSA «Pricing»</h5>
+<div class="ad"><b>H1*</b> Plumber Prices, No Surprises
+<b>H</b>  Drain Cleaning From $99
+<b>H</b>  See Our Price List Online
+<b>H</b>  $0 Dispatch Fee With Repair
+<b>D</b>  Flat-rate pricing quoted before work starts. Drain cleaning $99, toilet repair from $149.
+<b>D</b>  No hourly billing, no overtime fees. Licensed, insured, 4.9★. Book online today.</div>
+<h5>Активы</h5>
+<p>Sitelinks: Emergency 24/7, $99 Drain Cleaning, Water Heaters, Reviews, Financing, Book Online, Service Area, Coupons. Price asset: Drain cleaning $99 / Toilet repair $149 / Water heater install $1,899+ / Camera inspection $0 with clog. Image assets: экипаж, трак, работа.</p>
+</div>
+</div>
+</div>
+
+<div class="camp">
+<header><h4>S | Drain Cleaning &amp; Clogs – Гео 1 и Suburbs</h4><span class="meta">100 ключей · 14 180 запр./мес · портфель Urgent · старт tCPA $75 / $70 · потолок CPC $20 / $18 · 14% + 8% бюджета</span></header>
+<div class="body">
+<div class="col">
+<h5>Группы и ключи</h5>
+<ul>
+<li><strong>Clogged Kitchen / Sink</strong> — <span class="mono">[kitchen sink clogged] [kitchen drain clogged] [blocked kitchen sink] [clogged sink] "unclog kitchen sink" "clogged sink drain" "bathroom sink clogged" "unclog bathroom sink"</span> (3 900)</li>
+<li><strong>Drain Cleaning / Clogged Drain</strong> — <span class="mono">[drain cleaning] [clogged drain] [unclog drain] "drain cleaning services" "clean out drain" "blocked drain" "slow drain"</span> (3 750)</li>
+<li><strong>Clogged Toilet</strong> — <span class="mono">[clogged toilet] [clogged toilet bowl] [unclog toilet] "blocked toilet" "toilet overflow" "toilet won't flush"</span> (2 340)</li>
+<li><strong>Clogged Shower / Tub</strong> — <span class="mono">[shower drain clogged] [unclog shower drain] "bathtub clogged" "clogged tub drain" "unclog bathtub drain"</span> (1 650)</li>
+<li><strong>Drain Cleaning Services</strong> — <span class="mono">"drain cleaning company" "drain services" "drain plumbing" "drain expert"</span> (920)</li>
+<li><strong>Drain Cleaning – Near Me</strong> — <span class="mono">[drain cleaning near me] "drain service near me" "drain cleaning company near me"</span> (790)</li>
+<li><strong>Hydro Jetting</strong> — <span class="mono">[hydro jetting] [hydro jet] "hydro jet drain cleaning" "hydro jetting cost"</span> (530)</li>
+<li><strong>Snaking / Rooter</strong> — <span class="mono">"drain snaking service" "drain rooter" "rooter service"</span> (300). Сам ключ <code>snaking a drain</code> (3 100) только в тест-кампании: это DIY.</li>
+<li><strong>Basement / Floor Drain Backup</strong> — добавить: <span class="mono">"floor drain backing up" "basement drain clogged" "sewage backup basement"</span></li>
+</ul>
+<h5>Локальные негативы кампании</h5>
+<p class="mono" style="font-size:12.5px">snake, auger, drano, remover, opener, cleaner, chemical, baking soda, vinegar, plunger, cover, strainer, grate, hair catcher, pvc, pipe, diy, how to, yourself, video</p>
+</div>
+<div class="col">
+<h5>RSA (H1 закреплён под оффер)</h5>
+<div class="ad"><b>H1*</b> $99 Drain Cleaning – Any Drain
+<b>H</b>  Cleared Today or You Don't Pay
+<b>H</b>  Clogged Sink, Tub or Toilet?
+<b>H</b>  Same-Day Drain Snaking
+<b>H</b>  Camera Inspection Included
+<b>H</b>  No Chemicals – A Real Fix
+<b>H</b>  Licensed Drain Experts
+<b>H</b>  {LOCATION(City):Local} Drain Cleaning
+<b>H</b>  Plumber in 60–90 Minutes
+<b>H</b>  4.9★ Rated Drain Cleaning
+<b>D</b>  Sink, tub or main line clogged? Cleared today by snaking or hydro jet. Book in 60 seconds.
+<b>D</b>  Flat $99 drain cleaning, no hidden fees. Free camera check with every clog. Call now.
+<b>D</b>  Kitchen, bathroom, basement drains. Licensed plumbers, evenings and weekends, no extra charge.
+<b>D</b>  Recurring clog? Hydro jetting removes grease and roots for good. Upfront quote on site.</div>
+<h5>Группа «Clogged Toilet», H1 через DKI</h5>
+<div class="ad"><b>H1*</b> {KeyWord:Clogged Toilet} Fixed Today
+<b>H</b>  $99 Toilet Unclogging
+<b>H</b>  Plumber in 60–90 Minutes
+<b>D</b>  Overflowing or won't flush? Cleared today, no mess, or you don't pay. Call now.</div>
+<h5>Активы</h5>
+<p>Price asset: Drain cleaning $99 · Main line $249+ · Hydro jetting $349+ · Camera $0. Promotion asset: «$99 drain special» без даты окончания. Sitelinks: Kitchen Sink, Toilet, Shower &amp; Tub, Main Line, Hydro Jetting.</p>
+</div>
+</div>
+</div>
+
+<div class="camp">
+<header><h4>S | Water Heaters</h4><span class="meta">39 ключей · 5 160 запр./мес · портфель Projects · старт tCPA $85 · потолок CPC $28 · 9% бюджета (+35% с декабря по март)</span></header>
+<div class="body">
+<div class="col">
+<h5>Группы и ключи</h5>
+<ul>
+<li><strong>Install &amp; Replace</strong> — <span class="mono">[water heater installation] [hot water installation] [water heater replacement] [hot water tank replacement] "hot water tank installation" "hot water heater replacement" "electric water heater installation"</span> (1 930)</li>
+<li><strong>Repair</strong> — <span class="mono">[water heater repair] [water heater repair near me] [hot water repair near me] "hot water tank repair" "gas water heater repair" "no hot water"</span> (1 040)</li>
+<li><strong>Tankless</strong> — <span class="mono">[tankless water heater install] "tankless water heater installation near me" "tankless water heater maintenance"</span> (950)</li>
+<li><strong>Maintenance</strong> — <span class="mono">[water heater maintenance] "water heater flush"</span> (520)</li>
+<li><strong>Leaking</strong> — <span class="mono">[water heater leaking] "hot water tank leaking"</span> (420) → ставка выше, это срочно</li>
+<li><strong>Brand – Rinnai / Navien</strong> — <span class="mono">"rinnai installation" "navien installer" "navien service"</span> (100). Чистые <code>rinnai tankless water heater</code> (1 230) и <code>navien tankless water heater</code> (840) только в тест-кампании.</li>
+</ul>
+<h5>Расписание и конверсии</h5>
+<ul>
+<li>6:00–23:00, «Leaking» и «Repair» 24/7.</li>
+<li>Primary: звонок ≥ 60 сек, форма, онлайн-запись. С месяца 3 сюда первым приходит tROAS: средний чек $2 500–4 500, разброс от $250 (ремонт) до $6 000 (tankless).</li>
+</ul>
+<h5>Посадочная</h5>
+<p><span class="mono">/water-heater-repair-installation/{city}</span>: два пути на первом экране («No hot water? Repair today» и «Replace: installed today from $49/mo»), таблица цен по типам (40/50 gal tank, tankless), бренды, гарантия 10 лет, финансирование, «old unit removal included».</p>
+</div>
+<div class="col">
+<h5>RSA «Install &amp; Replace»</h5>
+<div class="ad"><b>H1*</b> Water Heater Installed Today
+<b>H</b>  New Water Heater From $49/mo
+<b>H</b>  Free Replacement Quote
+<b>H</b>  10-Year Warranty Available
+<b>H</b>  Tank &amp; Tankless, All Brands
+<b>H</b>  Rinnai &amp; Navien Certified
+<b>H</b>  Licensed Gas Fitters (TSSA)
+<b>H</b>  Old Unit Removal Included
+<b>H</b>  {LOCATION(City):Local} Water Heater Pros
+<b>D</b>  Repair or replace today. Tank &amp; tankless, all brands. Upfront price, 0% financing.
+<b>D</b>  Installed same day by licensed gas fitters. 10-year warranty, old unit removed. Free quote.
+<b>D</b>  No hot water? Same-day service, evenings &amp; weekends at no extra charge. Book online now.
+<b>D</b>  Thinking tankless? Certified Rinnai &amp; Navien installers. Rebates and financing available.</div>
+<h5>RSA «Repair»</h5>
+<div class="ad"><b>H1*</b> Water Heater Repair Today
+<b>H</b>  No Hot Water? Fixed Same Day
+<b>H</b>  $0 Dispatch Fee With Repair
+<b>H</b>  Gas &amp; Electric, All Brands
+<b>D</b>  Pilot out, leaking tank, lukewarm water. Diagnosed and fixed today. Upfront pricing.
+<b>D</b>  Licensed technicians, parts on the truck. If it's not worth fixing, we'll say so.</div>
+<h5>Активы</h5>
+<p>Price asset по типам установок, promotion asset под сезонный оффер (декабрь–март), lead form asset «Get a replacement quote» с автоперезвоном, sitelinks: Tankless, Repair, Financing, Rebates.</p>
+</div>
+</div>
+</div>
+
+<div class="camp">
+<header><h4>S | Sewer &amp; Main Line</h4><span class="meta">21 ключ · 1 470 запр./мес · портфель Urgent · старт tCPA $140 · потолок CPC $45 · 6% бюджета</span></header>
+<div class="body">
+<div class="col">
+<h5>Группы и ключи</h5>
+<ul>
+<li><strong>Sewer &amp; Main Line Cleaning</strong> — <span class="mono">[sewer cleaning] [sewer drain cleaning] "main sewer line clog" "sewer line cleaning" "sewer cleanout" "clogged sewer line"</span> (600)</li>
+<li><strong>Sewer Line Repair &amp; Replacement</strong> — <span class="mono">[sewer repair] [sewer line repair] "sewer line replacement cost" "sewer repair near me"</span> (310)</li>
+<li><strong>Trenchless</strong> — <span class="mono">[trenchless sewer line replacement] "trenchless sewer repair" "trenchless pipe repair" "trenchless water line replacement"</span> (190)</li>
+<li><strong>Camera Inspection</strong> — добавить: <span class="mono">"sewer camera inspection" "sewer scope" "drain camera inspection cost"</span></li>
+<li><strong>Backwater Valve</strong> — добавить: <span class="mono">"backwater valve installation" "backflow preventer installation" "basement flooding protection"</span> плюс название субсидии города</li>
+<li><strong>Septic</strong> — <span class="mono">"septic tank repair" "septic tank plumbing"</span> (170), только если обслуживаете</li>
+</ul>
+<h5>Почему ставка $45 оправдана</h5>
+<p>Средний чек $4 000–12 000, маржа 40–50%. Даже при CPL $180 и закрываемости 35% один заказ стоит около $500 рекламы против $2 000+ маржи. Это самая недооценённая кампания у большинства сантехников: они пугаются CPC $40.</p>
+</div>
+<div class="col">
+<h5>RSA</h5>
+<div class="ad"><b>H1*</b> Sewer Line Repair Experts
+<b>H</b>  Free Camera Inspection
+<b>H</b>  Trenchless – No Dug-Up Yard
+<b>H</b>  Sewer Backup? Same-Day Help
+<b>H</b>  Financing From $99/mo
+<b>H</b>  25-Year Warranty on Liners
+<b>H</b>  Licensed &amp; Insured Since 2009
+<b>H</b>  {LOCATION(City):Local} Sewer Specialists
+<b>D</b>  Backed-up sewer or roots in the line? Camera inspection first, honest options, upfront price.
+<b>D</b>  Trenchless repair and replacement done in one day. Financing available. Free estimate.
+<b>D</b>  Backwater valve installation with city subsidy paperwork handled for you. Call now.</div>
+<h5>Посадочная</h5>
+<p><span class="mono">/sewer-line-repair/{city}</span>: видео камеры из реальной трубы, «3 options after inspection: clean / line / replace» с ценовыми вилками, финансирование, субсидия, кейсы с адресом района и фото до/после.</p>
+</div>
+</div>
+</div>
+
+<div class="camp">
+<header><h4>S | Leaks, Pipes &amp; Kitec</h4><span class="meta">44 ключа · 3 770 запр./мес · портфель Urgent · старт tCPA $95 · потолок CPC $30 · 6% бюджета</span></header>
+<div class="body">
+<div class="col">
+<h5>Группы и ключи</h5>
+<ul>
+<li><strong>Kitec / Poly-B Replacement</strong> — <span class="mono">[kitec plumbing] "kitec plumbing replacement" "kitec pipe" "kitec replacement cost" "polybutylene plumbing"</span> (1 120) → посадочная <span class="mono">/kitec-replacement</span>. Ставка low всего $0.7: конкуренты не поняли, что это заказ на $8–15K.</li>
+<li><strong>Frozen / Burst Pipes</strong> — <span class="mono">[frozen pipes] [burst pipe] "plumbing frozen pipes" "burst water pipe" "pipe burst in house" "frozen water pipes"</span> (1 000). Включается автоматически при прогнозе ниже −15°C.</li>
+<li><strong>Pipe Leak Repair</strong> — <span class="mono">[leaking pipe] [pipe leak repair] "water leak repair" "water pipe repair" "copper pipe leak repair"</span> (670)</li>
+<li><strong>Leak Detection</strong> — <span class="mono">[leak detection] "leak detection near me" "leak detection company" "plumbing leak detection" "slab leak" "foundation leak repair"</span> (610). Чистый <code>water leak detection</code> (650) только в тесте: половина ищет датчики.</li>
+<li><strong>Repiping &amp; Water Lines</strong> — <span class="mono">"repipe" "repiping" "water line replacement" "pipe installation"</span> (370)</li>
+</ul>
+</div>
+<div class="col">
+<h5>RSA «Kitec»</h5>
+<div class="ad"><b>H1*</b> Kitec Plumbing Replacement
+<b>H</b>  Free Kitec Inspection
+<b>H</b>  Replace Before It Fails
+<b>H</b>  Condo &amp; House Repipe Experts
+<b>H</b>  Insurance-Ready Documentation
+<b>H</b>  Financing From $149/mo
+<b>H</b>  Done in 1–2 Days, Minimal Walls
+<b>D</b>  Kitec fails without warning and insurers are dropping it. Free inspection, fixed-price repipe.
+<b>D</b>  Full PEX repipe in 1–2 days with drywall patched. 25-year warranty. Financing available.</div>
+<h5>RSA «Leak»</h5>
+<div class="ad"><b>H1*</b> Leaking Pipe? Fixed Today
+<b>H</b>  Leak Found &amp; Repaired Fast
+<b>H</b>  No Overtime Fees, Ever
+<b>H</b>  Plumber in 60–90 Minutes
+<b>D</b>  Ceiling stain, wet wall, dripping pipe. We find the source and fix it today. Upfront price.</div>
+<h5>Посадочные</h5>
+<p><span class="mono">/kitec-replacement</span>: «How to tell if you have Kitec» с фото оранжевых/синих труб, история отзыва, страховой аспект, цена репайпа по типу жилья, форма «free inspection». <span class="mono">/leak-repair/{city}</span>: срочная версия с звонком.</p>
+</div>
+</div>
+</div>
+
+<h3>Кампании второго приоритета, коротко</h3>
+<div class="grid">
+<div class="card"><h4>Toilets, Faucets &amp; Fixtures</h4><p>115 ключей, 10 550 запросов. Группы: Faucet Repair (2 270), Toilet Repair (1 870), Garbage Disposal (1 780), Sink (1 310), Faucet Install (1 150), Toilet Install &amp; Replace (1 150), Shower &amp; Tub (760). Оффер «Toilet repair from $149, installed from $299 + toilet». Онлайн-запись как главная конверсия: люди готовы ждать до завтра. Низкий чек, но это заполнение расписания в тихие дни и вход в дом для допродаж.</p></div>
+<div class="card"><h4>Gas Lines &amp; Fitters</h4><p>19 ключей, 1 230 запросов. Gas Line Installation (490), Gas Fitters (390), Gas Water Heaters (160), Gas Leak (140, срочно, 24/7). В объявлении номер лицензии газовика. Сезон: весна (BBQ) и осень (отопление).</p></div>
+<div class="card"><h4>Sump Pump &amp; Basement</h4><p>В вашем списке почти нет сервисных sump-запросов, только товарный <code>sump pumps</code> (4 620). Добавляем: sump pump installation / replacement / repair near me, battery backup sump pump installation, backwater valve installation. Кампания живёт с февраля по июнь, посадочная с субсидией города и «before the spring melt».</p></div>
+<div class="card"><h4>Commercial</h4><p>430 запросов, но CPC до $32 и чек в контрактах. Отдельная линия телефона, форма «request a site visit», посадочная под property managers, рестораны, кондо. Только будни 7:00–19:00.</p></div>
+<div class="card"><h4>Competitor</h4><p>31 ключ, 2 680 запросов: Superior, Advanced, Precise, Mr Rooter, Roto-Rooter и другие. Phrase match, Max Clicks с потолком $6, объявление «Compare before you book: $99 drain, no overtime fees», посадочная <span class="mono">/why-us</span> с честным сравнением по цене выезда и гарантии. Пауза, если CPL выше двойного ядра.</p></div>
+<div class="card"><h4>Brand</h4><p>Ваше название и опечатки. Target impression share 90% абсолютного верха. Стоит копейки и не даёт конкурентам перехватывать LSA-переходы и рекомендации. Отдельный отчёт: рост брендовых запросов это главный показатель того, что всё остальное работает.</p></div>
+</div>
+</section>
+
+<!-- ================= NEGATIVES ================= -->
+<section id="negatives">
+<div class="eyebrow">Раздел 7</div>
+<h2>Минус-слова</h2>
+<p class="lead">Общие списки подключаются ко всем Search-кампаниям на уровне аккаунта, локальные живут внутри кампаний. К ним добавляются 136 ключей из вашего файла, помеченных NEGATIVE. Первые 30 дней поисковые запросы просматриваются ежедневно: в plumbing 40% бюджета первого месяца уходит на запросы, которых не было в списке.</p>
+<div class="negs">
+<div class="neg"><h5>DIY и информация</h5><p>how to, how do i, diy, yourself, tutorial, video, youtube, reddit, forum, meaning, definition, diagram, symbol, code, 101, for dummies, guide, tips, what is, why is, can i, should i, vs, best way to, zomboid, game</p></div>
+<div class="neg"><h5>Работа и обучение</h5><p>job, jobs, salary, hiring, career, apprentice, apprenticeship, course, school, training, union, exam, certification, license test, resume, college, wage</p></div>
+<div class="neg"><h5>Магазины и бренды товаров</h5><p>home depot, lowes, canadian tire, rona, amazon, costco, walmart, moen, delta, kohler, gerber, mansfield, american standard, toto, grohe, sharkbite, wirsbo, uponor, oatey, viega, manabloc, emco, wolseley, supply, wholesale, showroom, store</p></div>
+<div class="neg"><h5>Детали и материалы</h5><p>p trap, ptrap, connector, fitting, bolts, flange, wax ring, expansion tank, pvc, cpvc, pex, copper pipe, corrugated, pipe size, parts, kit, wrench, tool, toilet bowl tank, water closet, commercial toilets, commercial faucet, cartridge, aerator, washer, gasket</p></div>
+<div class="neg"><h5>Химия</h5><p>drano, liquid plumr, roebic, declogger, clog remover, drain opener, drain cleaner, enzyme, chemical, baking soda, vinegar, bleach, unblocker</p></div>
+<div class="neg"><h5>Бесплатно и мошенничество</h5><p>free, cheapest, volunteer, donation, scam, complaints, lawsuit, sue, class action</p></div>
+<div class="neg"><h5>Другие профессии (если не оказываете)</h5><p>electrician, electrical, roofing, hvac, furnace, air conditioning, ac repair, landscaping, pool, sprinkler, irrigation, appliance repair, handyman, painter, mold, restoration</p></div>
+<div class="neg"><h5>Не то намерение</h5><p>insurance, claim, warranty, rental, apartment for, for sale, mobile home, rv, boat, camper, trailer, tiny house, blueprint, floor plan, software, app, invoice template, logo, shirt</p></div>
+<div class="neg"><h5>География (все города, куда не едете)</h5><p>ottawa, montreal, calgary, edmonton, vancouver, winnipeg, london ontario, kingston, windsor, usa, buffalo, new york, florida, california, texas + список соседних городов вне зоны</p></div>
+</div>
+<div class="callout blue"><p><strong>Правило исключений между кампаниями.</strong> Чтобы «drain cleaning» не показывался из Core, а «emergency plumber» из Drain, каждая тематическая кампания получает свои ключи как минус-слова в остальных (Emergency-термины минусуются везде, кроме Emergency; drain-термины везде, кроме Drain и Sewer; и так далее). Это удерживает поисковый запрос в той кампании, где для него написано объявление и посадочная.</p></div>
+</section>
+
+<!-- ================= BIDS ================= -->
+<section id="bids">
+<div class="eyebrow">Раздел 8</div>
+<h2>Ставки, бюджеты и фазы</h2>
+<div class="phases">
+<div class="phase p0"><div class="when">Неделя 0</div><h4>Фундамент</h4><ul><li>Трекинг, CRM, коллтрекинг, LSA, GBP</li><li>Сайт и 6 главных посадочных</li><li>Сборка аккаунта в Editor</li><li>Скрипт диспетчера, тест звонков</li></ul></div>
+<div class="phase"><div class="when">Дни 1–14</div><h4>Запуск</h4><ul><li>Портфели tCPA с целью +40% к желаемой и потолком CPC</li><li>Exact + Phrase, полный набор негативов</li><li>Поисковые запросы ежедневно, прослушка 20 звонков в день</li><li>Бюджет 70% от планового</li></ul></div>
+<div class="phase"><div class="when">Дни 15–30</div><h4>Калибровка</h4><ul><li>tCPA −10–15% в неделю там, где ≥ 15 конверсий</li><li>Бюджет к 100%, IS lost to budget по P1 &lt; 10%</li><li>Первые A/B посадочных</li><li>Квалифицированный звонок становится primary</li></ul></div>
+<div class="phase"><div class="when">Месяц 2</div><h4>Масштаб</h4><ul><li>PMax Lead Gen, Broad Match Scale, Research-тест</li><li>Офлайн-импорт «записан» как primary</li><li>Ремаркетинг-списки, исключение конвертеров</li><li>Бюджет +30% в кампании с CPL ниже цели</li></ul></div>
+<div class="phase"><div class="when">Месяц 3–6</div><h4>Ценность</h4><ul><li>Импорт суммы заказа, tROAS в Projects и Sewer</li><li>YouTube / Demand Gen на дорогие услуги</li><li>Сезонные планы бюджета</li><li>Гипер-локальные группы по районам</li></ul></div>
+</div>
+
+<h3>Три уровня бюджета</h3>
+<div class="tbl"><table>
+<thead><tr><th>Уровень</th><th class="num">Search/мес</th><th class="num">LSA/мес</th><th>Что включаем</th><th class="num">Лидов/мес</th><th class="num">Заказов/мес</th><th class="num">Экипажей нужно</th></tr></thead>
+<tbody>
+<tr><td><strong>Старт</strong> (только Гео 1)</td><td class="num">$15 000</td><td class="num">$2 500</td><td>Emergency, Core Гео 1, Drain Гео 1, Water Heaters, Leaks, Brand</td><td class="num">220–280</td><td class="num">120–150</td><td class="num">2</td></tr>
+<tr><td><strong>Рост</strong> (все 5 гео)</td><td class="num">$30 000</td><td class="num">$5 000</td><td>Все 14 кампаний + LSA, со 2-го месяца PMax и Broad</td><td class="num">450–550</td><td class="num">240–290</td><td class="num">3–4</td></tr>
+<tr><td><strong>Доминирование</strong></td><td class="num">$60 000+</td><td class="num">$8 000</td><td>То же + IS ≥ 70% по P1, YouTube, районы, второй бренд для дренажа</td><td class="num">800–1 000</td><td class="num">430–540</td><td class="num">6–7</td></tr>
+</tbody></table></div>
+<p>Расчёт мощности: экипаж закрывает 4–5 заказов в день, 85–105 в месяц. Если экипажей меньше, чем нужно, реклама начинает продавать «завтра», конверсия падает на треть, а отзывы портятся. Лучше меньший бюджет и «same-day» в каждом объявлении, чем большой бюджет и «через три дня».</p>
+
+<h3>Как выставляются цели по CPA в первый месяц</h3>
+<div class="tbl compact"><table>
+<thead><tr><th>Кампания</th><th class="num">Желаемый CPL</th><th class="num">Старт tCPA</th><th class="num">Потолок CPC</th><th>Логика</th></tr></thead>
+<tbody>
+<tr><td>Emergency 24/7</td><td class="num">$80</td><td class="num">$110</td><td class="num">$35</td><td>Закрываемость 75%, чек $450–900: можно платить дороже всех</td></tr>
+<tr><td>Core Plumber</td><td class="num">$70</td><td class="num">$95 / $90</td><td class="num">$25 / $22</td><td>Самая конкурентная, часть запросов «сравнить»</td></tr>
+<tr><td>Drain &amp; Clogs</td><td class="num">$55</td><td class="num">$75 / $70</td><td class="num">$20 / $18</td><td>Низкий чек входа, но 35% допродаж</td></tr>
+<tr><td>Sewer &amp; Main Line</td><td class="num">$120</td><td class="num">$140</td><td class="num">$45</td><td>Чек $4–12K, закрываемость 35–45%</td></tr>
+<tr><td>Water Heaters</td><td class="num">$65</td><td class="num">$85</td><td class="num">$28</td><td>Чек $2.5–4.5K на замене, ремонт дешевле</td></tr>
+<tr><td>Leaks &amp; Kitec</td><td class="num">$75</td><td class="num">$95</td><td class="num">$30</td><td>Kitec тянет вверх средний чек группы</td></tr>
+<tr><td>Fixtures</td><td class="num">$45</td><td class="num">$60</td><td class="num">$14</td><td>Чек $150–400, дешёвые клики</td></tr>
+<tr><td>Gas / Sump / Commercial</td><td class="num">$60 / $60 / $120</td><td class="num">$80 / $80 / $150</td><td class="num">$22 / $18 / $35</td><td>Малый объём, учатся в портфеле</td></tr>
+</tbody></table></div>
+<p>Правило снижения: tCPA уменьшается на 10–15% раз в неделю только в кампаниях с 15+ конверсиями за 30 дней и impression share lost to rank ниже 40%. Если после снижения объём конверсий упал больше, чем на 20%, шаг откатывается. Никаких ручных «оптимизаций» чаще раза в неделю: Smart Bidding наказывает за дёрганье.</p>
+</section>
+
+<!-- ================= FORECAST ================= -->
+<section id="forecast">
+<div class="eyebrow">Раздел 9</div>
+<h2>Прогноз результатов</h2>
+<p class="lead">Цифры для уровня «Рост»: $30 000 Search + $5 000 LSA в месяц на пять локаций, валюта та же, что в вашем Keyword Planner. Три сценария первого месяца, потом траектория до шестого. Это модель, а не обещание: она честно чувствительна к тому, как берут трубку.</p>
+
+<div class="tbl"><table>
+<thead><tr><th>Месяц 1, Search ($30 000)</th><th class="num">Консервативно</th><th class="num">Ожидаемо</th><th class="num">Лучший случай</th></tr></thead>
+<tbody>
+<tr><td>Средний CPC</td><td class="num">$11.00</td><td class="num">$9.50</td><td class="num">$8.00</td></tr>
+<tr><td>Кликов</td><td class="num">2 730</td><td class="num">3 160</td><td class="num">3 750</td></tr>
+<tr><td>Конверсия посадочной (звонок ≥ 60 с + форма + запись)</td><td class="num">10%</td><td class="num">13%</td><td class="num">17%</td></tr>
+<tr><td>Лидов</td><td class="num">273</td><td class="num">410</td><td class="num">638</td></tr>
+<tr><td><strong>Цена лида (CPL)</strong></td><td class="num"><strong>$110</strong></td><td class="num"><strong>$73</strong></td><td class="num"><strong>$47</strong></td></tr>
+<tr><td>Квалифицированных (в зоне, реальная услуга)</td><td class="num">65% → 177</td><td class="num">70% → 287</td><td class="num">75% → 478</td></tr>
+<tr><td>Записано (зависит от диспетчера)</td><td class="num">60% → 106</td><td class="num">68% → 195</td><td class="num">75% → 359</td></tr>
+<tr><td><strong>Цена записанного заказа</strong></td><td class="num"><strong>$283</strong></td><td class="num"><strong>$154</strong></td><td class="num"><strong>$84</strong></td></tr>
+<tr><td>Средний чек (смесь услуг)</td><td class="num">$700</td><td class="num">$850</td><td class="num">$950</td></tr>
+<tr><td>Выручка от Search</td><td class="num">$74 000</td><td class="num">$166 000</td><td class="num">$341 000</td></tr>
+<tr><td><strong>ROAS (выручка / расход)</strong></td><td class="num"><strong>2.5x</strong></td><td class="num"><strong>5.5x</strong></td><td class="num"><strong>11x</strong></td></tr>
+</tbody></table></div>
+
+<div class="tbl compact"><table>
+<thead><tr><th>Месяц 1, LSA ($5 000)</th><th class="num">Ожидаемо</th></tr></thead>
+<tbody>
+<tr><td>Цена лида (оплата за лид, невалидные оспариваются)</td><td class="num">$50</td></tr>
+<tr><td>Лидов</td><td class="num">100</td></tr>
+<tr><td>Записано (65%)</td><td class="num">65</td></tr>
+<tr><td>Выручка (чек $850)</td><td class="num">$55 000</td></tr>
+</tbody></table></div>
+
+<div class="kpi">
+<div><b>$35 000</b>расход, месяц 1</div>
+<div><b>≈ 510</b>лидов</div>
+<div><b>≈ 260</b>записанных заказов</div>
+<div><b>≈ $135</b>за записанный заказ (смесь)</div>
+<div><b>≈ $221 000</b>выручка</div>
+<div><b>≈ 6.3x</b>ROAS до вычета услуг агентства</div>
+</div>
+
+<h3>Откуда взят средний чек $850</h3>
+<div class="tbl compact"><table>
+<thead><tr><th>Услуга</th><th class="num">Доля заказов</th><th class="num">Средний чек</th><th class="num">Вклад</th></tr></thead>
+<tbody>
+<tr><td>Дренаж и засоры (с допродажами)</td><td class="num">35%</td><td class="num">$350</td><td class="num">$122</td></tr>
+<tr><td>Emergency и общий ремонт</td><td class="num">30%</td><td class="num">$550</td><td class="num">$165</td></tr>
+<tr><td>Сантехприборы и краны</td><td class="num">15%</td><td class="num">$320</td><td class="num">$48</td></tr>
+<tr><td>Водонагреватели</td><td class="num">10%</td><td class="num">$3 000</td><td class="num">$300</td></tr>
+<tr><td>Протечки, репайп, Kitec</td><td class="num">7%</td><td class="num">$900</td><td class="num">$63</td></tr>
+<tr><td>Канализация</td><td class="num">3%</td><td class="num">$6 000</td><td class="num">$180</td></tr>
+<tr class="total"><td>Итого</td><td class="num">100%</td><td class="num"></td><td class="num">≈ $880</td></tr>
+</tbody></table></div>
+
+<h3>Траектория</h3>
+<div class="tbl"><table>
+<thead><tr><th>Показатель (ожидаемый сценарий, Search + LSA)</th><th class="num">Месяц 1</th><th class="num">Месяц 3</th><th class="num">Месяц 6</th><th>За счёт чего</th></tr></thead>
+<tbody>
+<tr><td>Расход</td><td class="num">$35 000</td><td class="num">$42 000</td><td class="num">$50 000</td><td>Рост туда, где CPL ниже цели</td></tr>
+<tr><td>CPL смешанный</td><td class="num">$69</td><td class="num">$56</td><td class="num">$48</td><td>Обучение ставок, негативы, QS 8+, CRO</td></tr>
+<tr><td>Лидов</td><td class="num">510</td><td class="num">750</td><td class="num">1 040</td><td></td></tr>
+<tr><td>Доля записанных</td><td class="num">68%</td><td class="num">72%</td><td class="num">75%</td><td>Скрипт, speed-to-lead, ночной диспетчер</td></tr>
+<tr><td>Цена записанного заказа</td><td class="num">$135</td><td class="num">$105</td><td class="num">$90</td><td></td></tr>
+<tr><td>Средний чек</td><td class="num">$850</td><td class="num">$950</td><td class="num">$1 050</td><td>tROAS сдвигает микс к водонагревателям, канализации, Kitec</td></tr>
+<tr><td>Выручка</td><td class="num">$221 000</td><td class="num">$380 000</td><td class="num">$580 000</td><td></td></tr>
+<tr><td>ROAS</td><td class="num">6.3x</td><td class="num">9.0x</td><td class="num">11.6x</td><td></td></tr>
+</tbody></table></div>
+<p>Для сравнения: средние аккаунты сантехников в Северной Америке живут с CPL $90–150 на поиске и закрываемостью 45–55%. Разница между средним и лучшим аккаунтом на 20% в ставках и на 80% в телефоне, оффере и посадочной.</p>
+
+<h3>Ожидаемая цена лида по кампаниям, месяц 1</h3>
+<div class="tbl compact"><table>
+<thead><tr><th>Кампания</th><th class="num">CPL</th><th class="num">Закрываемость</th><th class="num">Чек</th><th>Комментарий</th></tr></thead>
+<tbody>
+<tr><td>LSA</td><td class="num">$35–70</td><td class="num">65%</td><td class="num">$700</td><td>Самые дешёвые, ограничены объёмом и рейтингом</td></tr>
+<tr><td>Brand</td><td class="num">$5–15</td><td class="num">85%</td><td class="num">$800</td><td>Растёт вместе с остальным</td></tr>
+<tr><td>Drain &amp; Clogs</td><td class="num">$50–70</td><td class="num">75%</td><td class="num">$350</td><td>Объём и допродажи</td></tr>
+<tr><td>Fixtures</td><td class="num">$45–65</td><td class="num">65%</td><td class="num">$320</td><td>Заполнение расписания</td></tr>
+<tr><td>Core Plumber</td><td class="num">$70–95</td><td class="num">65%</td><td class="num">$600</td><td>Основной объём</td></tr>
+<tr><td>Water Heaters</td><td class="num">$70–100</td><td class="num">55%</td><td class="num">$2 800</td><td>Лучший ROAS в аккаунте</td></tr>
+<tr><td>Leaks &amp; Kitec</td><td class="num">$80–110</td><td class="num">60%</td><td class="num">$1 200</td><td>Kitec конвертирует медленно, но дорого</td></tr>
+<tr><td>Emergency</td><td class="num">$90–120</td><td class="num">75%</td><td class="num">$650</td><td>Дорого, но закрывается на месте</td></tr>
+<tr><td>Sewer</td><td class="num">$120–180</td><td class="num">40%</td><td class="num">$6 000</td><td>Один заказ окупает месяц кампании</td></tr>
+<tr><td>Competitor</td><td class="num">$40–80</td><td class="num">50%</td><td class="num">$500</td><td>Маленький, но дешёвый</td></tr>
+<tr><td>Commercial</td><td class="num">$150–250</td><td class="num">30%</td><td class="num">контракт</td><td>Считать по LTV</td></tr>
+<tr><td>PMax (месяц 2)</td><td class="num">$60–90</td><td class="num">55%</td><td class="num">$500</td><td>Следить за качеством звонков еженедельно</td></tr>
+</tbody></table></div>
+</section>
+
+<!-- ================= OPS ================= -->
+<section id="ops">
+<div class="eyebrow">Раздел 10</div>
+<h2>Первые 90 дней: ритм работы</h2>
+<div class="grid">
+<div class="card"><h4>Ежедневно (30 минут, первые 30 дней)</h4><ul>
+<li>Отчёт поисковых запросов: добавить негативы, перенести конвертирующие запросы в exact.</li>
+<li>Прослушать 20 звонков: пометить квалифицированные, найти пропущенные и «не записали».</li>
+<li>Проверить расход по кампаниям, IS lost to budget по P1, аномалии CPC.</li>
+<li>Проверить, что все номера коллтрекинга и формы живы (тестовый звонок и заявка).</li>
+</ul></div>
+<div class="card"><h4>Еженедельно</h4><ul>
+<li>Пересмотр tCPA по правилу 10–15%, перераспределение бюджета к CPL ниже цели.</li>
+<li>Auction Insights: кто вырос, кто ушёл; отчёт по «user location».</li>
+<li>Ротация объявлений: заголовки с рейтингом Low заменяются, победители фиксируются.</li>
+<li>Отчёт владельцу: лиды, записано, выполнено, выручка, CPL, цена заказа, доля отвеченных звонков, speed-to-lead.</li>
+<li>Оспорить невалидные лиды LSA, ответить на отзывы.</li>
+</ul></div>
+<div class="card"><h4>Ежемесячно</h4><ul>
+<li>Сверка CRM и Google Ads до доллара, обновление ценностей конверсий.</li>
+<li>Один запущенный и один завершённый CRO-тест.</li>
+<li>Сезонный план бюджета на следующий месяц.</li>
+<li>N-грамм анализ поисковых запросов за месяц, пересборка групп.</li>
+<li>Аудит Quality Score: группы с QS ≤ 5 получают новую посадочную или объявление.</li>
+</ul></div>
+</div>
+<h3>Панель показателей</h3>
+<div class="tbl compact"><table>
+<thead><tr><th>Показатель</th><th>Цель, месяц 1</th><th>Цель, месяц 6</th><th>Кто отвечает</th></tr></thead>
+<tbody>
+<tr><td>Доля отвеченных звонков</td><td>≥ 92%</td><td>≥ 97%</td><td>Диспетчерская</td></tr>
+<tr><td>Speed-to-lead по формам</td><td>≤ 3 мин</td><td>≤ 60 сек</td><td>Диспетчерская</td></tr>
+<tr><td>Доля записанных из квалифицированных</td><td>≥ 65%</td><td>≥ 75%</td><td>Диспетчерская + скрипт</td></tr>
+<tr><td>CPL смешанный</td><td>≤ $80</td><td>≤ $50</td><td>Агентство</td></tr>
+<tr><td>IS абсолютного верха, P1 в Гео 1</td><td>≥ 40%</td><td>≥ 60%</td><td>Агентство</td></tr>
+<tr><td>Quality Score средний по расходу</td><td>≥ 7</td><td>≥ 8</td><td>Агентство + сайт</td></tr>
+<tr><td>Конверсия посадочных</td><td>≥ 12%</td><td>≥ 17%</td><td>CRO</td></tr>
+<tr><td>Новых отзывов в месяц</td><td>≥ 40</td><td>≥ 80</td><td>Экипажи + автоматизация</td></tr>
+<tr><td>Доля брендовых запросов</td><td>база</td><td>+50%</td><td>Все</td></tr>
+</tbody></table></div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section id="team">
+<div class="eyebrow">Раздел 11</div>
+<h2>Команда и риски</h2>
+<h3>Кто это делает</h3>
+<div class="grid">
+<div class="card"><h4>PPC lead</h4><p>Структура, ставки, бюджеты, еженедельные решения. Один человек владеет аккаунтом целиком.</p></div>
+<div class="card"><h4>PPC аналитик</h4><p>Поисковые запросы, негативы, отчёты, N-граммы, сверка с CRM. Ежедневная рутина первых 30 дней.</p></div>
+<div class="card"><h4>Инженер трекинга</h4><p>GTM, GA4, коллтрекинг, офлайн-импорт, антифрод. Отвечает за «каждый доллар посчитан».</p></div>
+<div class="card"><h4>CRO-дизайнер + разработчик</h4><p>Посадочные, генерация 1 000 страниц, скорость, A/B-тесты. В первую неделю это два человека на полный день.</p></div>
+<div class="card"><h4>Копирайтер</h4><p>Объявления, офферы, тексты страниц с локальной сутью. Знает, как звучит сантехник, а не маркетолог.</p></div>
+<div class="card"><h4>Аналитик звонков</h4><p>Слушает, тегирует, обучает диспетчеров, возвращает инсайты в объявления («люди спрашивают, берёте ли вы карты»).</p></div>
+</div>
+
+<h3>Что убьёт результат</h3>
+<ul>
+<li><strong>Телефон не берут ночью и в выходные.</strong> Минус 30% лидов и худший CPL в Emergency, где клики самые дорогие. Решение: answering service с первого дня.</li>
+<li><strong>Нет свободных экипажей.</strong> «Можем в четверг» превращает 70% записи в 35%. Решение: бюджет от мощности, а не от желания.</li>
+<li><strong>Владелец меняет офферы на ходу.</strong> Объявление обещает $99, техник просит $189. Отзывы падают, LSA отключает. Решение: оффер утверждается письменно, техники обучены.</li>
+<li><strong>Медленный или «красивый» сайт.</strong> LCP 4 секунды на 4G означает минус половину звонков. Решение: статика, бюджет веса страницы, замер каждую неделю.</li>
+<li><strong>Google-представители и автоприменение.</strong> Включённые «рекомендации» добавят broad match и КМС за ночь. Решение: выключить, доступ только на просмотр.</li>
+<li><strong>PMax съедает бренд и звонки-мусор.</strong> Решение: brand exclusions, только звонки ≥ 60 с и формы как конверсии, еженедельная прослушка PMax-звонков, отдельный tCPA.</li>
+<li><strong>Кликфрод от конкурентов.</strong> На ключах по $30 это заметно. Решение: защита с первого дня, IP-исключения, отчёт по невалидным кликам.</li>
+<li><strong>Спам в формах.</strong> Решение: reCAPTCHA v3, honeypot, проверка телефона, не считать форму конверсией до подтверждения.</li>
+<li><strong>Отклонённые объявления.</strong> «Licensed», «#1», «Google Guaranteed» требуют подтверждений. Решение: номера лицензий на странице, без превосходных степеней без доказательств.</li>
+</ul>
+</section>
+
+<!-- ================= FILES ================= -->
+<section id="files">
+<div class="eyebrow">Раздел 12</div>
+<h2>Приложенные файлы и что нужно от вас</h2>
+<div class="grid">
+<div class="card"><h4>keyword_map.csv</h4><p>Все 699 ключей с действием (TARGET / TEST / COMPETITOR / SKIP / NEGATIVE), кампанией, группой, типом соответствия, объёмом по каждой из 5 локаций и ставками. Готово для сборки в Google Ads Editor.</p></div>
+<div class="card"><h4>negative_keywords_master.csv</h4><p>Общие списки минус-слов по темам, 200+ терминов, для загрузки как shared lists.</p></div>
+<div class="card"><h4>campaign_structure.csv</h4><p>19 кампаний: тип, гео, запуск, стратегия, стартовый tCPA, потолок CPC, доля бюджета, расписание, посадочная, конверсии, заметки.</p></div>
+</div>
+<h3>Чтобы превратить план в аккаунт, нужно</h3>
+<ol>
+<li>Названия пяти локаций и границы зоны выезда (по районам).</li>
+<li>Список услуг, которые точно оказываете: газ, канализация trenchless, септики, коммерция, Kitec.</li>
+<li>Сколько экипажей и часы работы диспетчерской. Кто берёт трубку ночью.</li>
+<li>Реальные средние чеки по услугам из CRM за последний год и какая CRM (ServiceTitan, Housecall Pro, Jobber, другая).</li>
+<li>Номер лицензии, страховка, текущие отзывы и рейтинг в Google, есть ли LSA.</li>
+<li>Какие офферы готовы держать письменно: $99 дренаж, $0 выезд с ремонтом, финансирование.</li>
+</ol>
+<div class="foot">Источник цифр: пять выгрузок Google Keyword Planner от 27.09.2026 (699 ключей, сентябрь 2025 – август 2026). Ставки в валюте выгрузки (USD). Прогнозы это модель на основе отраслевых диапазонов и структуры спроса в ваших данных, не гарантия.</div>
+</section>
+</div>
+
+<script>
+(function(){
+  var css=getComputedStyle(document.documentElement);
+  function v(n){return css.getPropertyValue(n).trim();}
+  var ink=v('--ink'), ink2=v('--ink-2'), muted=v('--viz-muted'), grid=v('--grid'), axis=v('--axis');
+  var s1=v('--s1'), s2=v('--s2'), s3=v('--s3');
+  function el(n,a,t){var e=document.createElementNS('http://www.w3.org/2000/svg',n);for(var k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;return e;}
+
+  /* ---- bars: volume by campaign ---- */
+  var bars=[['Core Plumber (near me + head terms)',36810],['Drain Cleaning & Clogs',14180],['Toilets, Faucets & Fixtures',10550],['Water Heaters',5160],['Leaks, Pipes & Kitec',3770],['Competitor',2680],['Emergency 24/7',1860],['Sewer & Main Line',1470],['Gas Lines & Fitters',1230],['Commercial',430]];
+  var svg=document.getElementById('bars'), W=900, L=300, R=80, T=14, rowH=34, max=40000, pw=W-L-R;
+  bars.forEach(function(b,i){
+    var y=T+i*rowH, w=b[1]/max*pw;
+    svg.appendChild(el('text',{x:L-10,y:y+17,'text-anchor':'end','font-size':'13',fill:ink},b[0]));
+    svg.appendChild(el('rect',{x:L,y:y+4,width:Math.max(w,2),height:20,rx:0,fill:s1}));
+    svg.appendChild(el('text',{x:L+w+8,y:y+18,'font-size':'12.5',fill:ink2,'font-variant-numeric':'tabular-nums'},b[1].toLocaleString('ru-RU')));
+  });
+  var by=T+bars.length*rowH+6;
+  [0,10000,20000,30000,40000].forEach(function(t){var x=L+t/max*pw;svg.appendChild(el('line',{x1:x,y1:T,x2:x,y2:by,stroke:grid,'stroke-width':1}));svg.appendChild(el('text',{x:x,y:by+16,'text-anchor':'middle','font-size':'11',fill:muted},t===0?'0':(t/1000)+'K'));});
+  svg.appendChild(el('line',{x1:L,y1:T,x2:L,y2:by,stroke:axis,'stroke-width':1}));
+
+  /* ---- cpc ranges ---- */
+  var cpc=[['Emergency',12.57,33.18],['Near me / local',8.52,27.82],['Sewer & main line',6.06,29.86],['Generic plumbing / plumbers',6.16,24.84],['Drain & clogs',3.55,18.19],['Gas',4.34,14.72],['Water heaters',3.40,13.59],['Leaks',2.88,14.18],['Toilets',2.89,14.18],['Fixtures & faucets',2.11,12.83],['Commercial',4.19,12.47]];
+  var c=document.getElementById('cpc'), cL=250, cR=40, cT=14, cH=32, cmax=36, cpw=W-cL-cR;
+  function cx(val){return cL+val/cmax*cpw;}
+  cpc.forEach(function(r,i){
+    var y=cT+i*cH+16;
+    c.appendChild(el('text',{x:cL-10,y:y+4,'text-anchor':'end','font-size':'13',fill:ink},r[0]));
+    c.appendChild(el('line',{x1:cx(r[1]),y1:y,x2:cx(r[2]),y2:y,stroke:s1,'stroke-width':6,'stroke-linecap':'round'}));
+    c.appendChild(el('circle',{cx:cx(r[1]),cy:y,r:5,fill:'#fff',stroke:s1,'stroke-width':2}));
+    c.appendChild(el('text',{x:cx(r[1])-9,y:y+4,'text-anchor':'end','font-size':'11.5',fill:ink2},'$'+r[1].toFixed(0)));
+    c.appendChild(el('text',{x:cx(r[2])+9,y:y+4,'font-size':'11.5',fill:ink2},'$'+r[2].toFixed(0)));
+  });
+  var cby=cT+cpc.length*cH+6;
+  [0,10,20,30].forEach(function(t){c.appendChild(el('line',{x1:cx(t),y1:cT,x2:cx(t),y2:cby,stroke:grid,'stroke-width':1}));c.appendChild(el('text',{x:cx(t),y:cby+16,'text-anchor':'middle','font-size':'11',fill:muted},'$'+t));});
+  c.appendChild(el('line',{x1:cL,y1:cT,x2:cL,y2:cby,stroke:axis,'stroke-width':1}));
+
+  /* ---- seasonality lines ---- */
+  var months=['Сен','Окт','Ноя','Дек','Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг'];
+  var series=[{n:'Дренаж и засоры',c:s1,d:[100,82,79,76,86,73,83,80,77,74,77,77]},{n:'Водонагреватели',c:s2,d:[91,86,81,79,99,94,100,78,76,71,80,65]},{n:'Протечки и замёрзшие трубы',c:s3,d:[66,67,60,64,100,84,68,61,70,59,55,54]}];
+  var s=document.getElementById('season'), sL=44, sR=20, sT=14, sB=40, sW=W, sH=340, pwid=sW-sL-sR, phgt=sH-sT-sB;
+  function sx(i){return sL+i/(months.length-1)*pwid;} function sy(val){return sT+(1-(val-20)/80)*phgt;}
+  [20,40,60,80,100].forEach(function(t){s.appendChild(el('line',{x1:sL,y1:sy(t),x2:sW-sR,y2:sy(t),stroke:grid}));s.appendChild(el('text',{x:sL-8,y:sy(t)+4,'text-anchor':'end','font-size':'11',fill:muted},t));});
+  months.forEach(function(m,i){s.appendChild(el('text',{x:sx(i),y:sH-sB+20,'text-anchor':'middle','font-size':'11.5',fill:muted},m));});
+  series.forEach(function(sr){
+    var d=sr.d.map(function(val,i){return (i?'L':'M')+sx(i).toFixed(1)+' '+sy(val).toFixed(1);}).join(' ');
+    s.appendChild(el('path',{d:d,fill:'none',stroke:sr.c,'stroke-width':2.5,'stroke-linejoin':'round'}));
+    var last=sr.d.length-1; s.appendChild(el('circle',{cx:sx(last),cy:sy(sr.d[last]),r:4,fill:sr.c}));
+  });
+  var cross=el('line',{x1:0,y1:sT,x2:0,y2:sH-sB,stroke:axis,'stroke-width':1,opacity:0}); s.appendChild(cross);
+  var dots=series.map(function(sr){var d=el('circle',{r:5,fill:sr.c,stroke:'#fff','stroke-width':2,opacity:0});s.appendChild(d);return d;});
+  var hit=el('rect',{x:sL,y:sT,width:pwid,height:phgt,fill:'transparent'}); s.appendChild(hit);
+  var tip=document.getElementById('tip');
+  hit.addEventListener('mousemove',function(ev){
+    var r=s.getBoundingClientRect(), scale=sW/r.width, mx=(ev.clientX-r.left)*scale;
+    var i=Math.round((mx-sL)/pwid*(months.length-1)); i=Math.max(0,Math.min(months.length-1,i));
+    cross.setAttribute('x1',sx(i));cross.setAttribute('x2',sx(i));cross.setAttribute('opacity',1);
+    series.forEach(function(sr,k){dots[k].setAttribute('cx',sx(i));dots[k].setAttribute('cy',sy(sr.d[i]));dots[k].setAttribute('opacity',1);});
+    tip.innerHTML='<b>'+months[i]+'</b> · '+series.map(function(sr){return sr.n.split(' ')[0]+' '+sr.d[i];}).join(' · ');
+    var wrap=s.parentNode.getBoundingClientRect();
+    tip.style.left=(ev.clientX-wrap.left)+'px'; tip.style.top=(ev.clientY-wrap.top)+'px'; tip.style.opacity=1;
+  });
+  hit.addEventListener('mouseleave',function(){cross.setAttribute('opacity',0);dots.forEach(function(d){d.setAttribute('opacity',0);});tip.style.opacity=0;});
+})();
+</script>

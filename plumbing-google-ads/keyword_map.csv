@@ -1,0 +1,700 @@
+﻿keyword,action,campaign,ad_group,match_type,priority,total_monthly_searches,searches_Geo1,searches_Geo2,searches_Geo3,searches_Geo4,searches_Geo5,top_of_page_bid_low_usd,top_of_page_bid_high_usd,note
+licensed plumber,TARGET,P1 Core Plumber,Best / Licensed / Reviews,EXACT + PHRASE,P1,280,140,70,30,30,10,0.75,12.943333333333333,Generic service intent
+best plumbing,TARGET,P1 Core Plumber,Best / Licensed / Reviews,PHRASE,P1,90,40,10,20,10,10,1.99,15.0,Generic service intent
+plumbing,TARGET,P1 Core Plumber,Plumber / Plumbing – Head Terms,EXACT + PHRASE,P1,11220,6600,1600,1300,1000,720,6.32,24.686,Generic service intent
+new construction plumbing,TARGET,P1 Core Plumber,Plumber / Plumbing – Head Terms,PHRASE,P1,80,40,10,10,10,10,,,Generic service intent
+find a plumber,TARGET,P1 Core Plumber,Plumber / Plumbing – Head Terms,PHRASE,P1,60,20,10,10,10,10,6.83,29.83,Generic service intent
+need a plumber,TARGET,P1 Core Plumber,Plumber / Plumbing – Head Terms,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,9590,5400,1600,1000,1000,590,8.478,27.448,Generic service intent
+near me plumber,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,9590,5400,1600,1000,1000,590,8.478,27.448,Generic service intent
+plumbing companies near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,480,210,90,70,70,40,5.874,22.096,Generic service intent
+plumbing services near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,460,260,50,70,50,30,12.852500000000001,34.8425,Generic service intent
+best plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,210,90,70,30,10,10,5.4425,28.3025,Generic service intent
+good plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,210,90,70,30,10,10,5.4425,28.3025,Generic service intent
+local plumbers,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,160,90,10,40,10,10,9.809999999999999,34.15,Generic service intent
+plumbing repair near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,110,50,20,20,10,10,7.506666666666667,23.03333333333333,Generic service intent
+local plumber near me,TARGET,P1 Core Plumber,Plumber Near Me,EXACT + PHRASE,P1,100,50,20,10,10,10,8.746666666666666,46.75,Generic service intent
+plumbers in my area,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,90,50,10,10,10,10,10.01,26.39,Generic service intent
+licensed plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,80,40,10,10,10,10,14.85,32.12,Generic service intent
+plumbing contractors near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,80,40,10,10,10,10,5.62,24.915000000000003,Generic service intent
+residential plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,70,30,10,10,10,10,,,Generic service intent
+plumber nearby,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,70,30,10,10,10,10,15.77,56.83,Generic service intent
+plumbers near me residential,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,60,20,10,10,10,10,,,Generic service intent
+independent plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,60,20,10,10,10,10,7.43,13.11,Generic service intent
+plumbers in the area,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+handyman plumber near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,8.32,14.92,Generic service intent
+local plumbing companies,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+local plumbers in my area,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+recommended plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+registered plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+plumber near me home service,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+city plumbing near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,40,10,10,10,10,0,,,Generic service intent
+plomeros near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P2,30,10,10,0,0,10,,,Spanish-language near-me — test
+christian plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,10,10,0,0,0,0,,,Generic service intent
+local plumbers recommended,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,0,0,0,0,0,0,,,Generic service intent
+mobile home plumbers near me,TARGET,P1 Core Plumber,Plumber Near Me,PHRASE,P1,0,0,0,0,0,0,,,Generic service intent
+plumbing services,TARGET,P1 Core Plumber,Plumbing Company & Services,EXACT + PHRASE,P1,660,390,140,50,50,30,5.042,31.562,Generic service intent
+plumbing companies,TARGET,P1 Core Plumber,Plumbing Company & Services,EXACT + PHRASE,P1,630,320,110,70,90,40,4.764,19.983999999999998,Generic service intent
+plumbing contractor,TARGET,P1 Core Plumber,Plumbing Company & Services,PHRASE,P1,90,50,10,10,10,10,3.57,28.68,Generic service intent
+the plumbing company,TARGET,P1 Core Plumber,Plumbing Company & Services,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+plumbing repair,TARGET,P1 Core Plumber,Plumbing Repair,EXACT + PHRASE,P1,240,110,90,20,10,10,5.875,24.55,Generic service intent
+plumber cost,TARGET,P1 Core Plumber,Pricing & Affordable,EXACT + PHRASE,P1,430,390,10,10,10,10,2.635,10.475,Transparent pricing LP
+affordable plumbers near me,TARGET,P1 Core Plumber,Pricing & Affordable,EXACT + PHRASE,P1,340,260,30,20,20,10,6.644,26.330000000000002,Transparent pricing LP
+plumber cost per hour,TARGET,P1 Core Plumber,Pricing & Affordable,EXACT + PHRASE,P1,300,260,10,10,10,10,3.46,11.47,Transparent pricing LP
+affordable plumbing,TARGET,P1 Core Plumber,Pricing & Affordable,EXACT + PHRASE,P1,110,70,10,10,10,10,4.15,17.41,Transparent pricing LP
+plumbers near me prices,TARGET,P1 Core Plumber,Pricing & Affordable,PHRASE,P1,90,50,10,10,10,10,,,Transparent pricing LP
+low cost plumbing for seniors,TARGET,P1 Core Plumber,Pricing & Affordable,PHRASE,P1,20,10,0,0,0,10,,,Transparent pricing LP
+residential plumbing,TARGET,P1 Core Plumber,Residential Plumbing,EXACT + PHRASE,P1,110,70,10,10,10,10,2.87,17.22,Generic service intent
+home plumbing,TARGET,P1 Core Plumber,Residential Plumbing,PHRASE,P1,60,20,10,10,10,10,2.69,15.04,Generic service intent
+hometown plumbing,TARGET,P1 Core Plumber,Residential Plumbing,PHRASE,P1,50,10,10,10,10,10,,,Generic service intent
+kitchen sink clogged,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,560,320,70,70,70,30,4.154,19.096,Volume engine — $99 drain offer
+kitchen drain clogged,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,560,320,70,70,70,30,4.154,19.096,Volume engine — $99 drain offer
+blocked kitchen sink,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,560,320,70,70,70,30,4.154,19.096,Volume engine — $99 drain offer
+clogged sink,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,450,260,110,40,30,10,5.704,20.595999999999997,Volume engine — $99 drain offer
+clean sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,250,140,30,20,50,10,1.5160000000000002,13.934000000000001,Volume engine — $99 drain offer
+unclog kitchen sink,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,230,140,30,30,20,10,4.813999999999999,19.75,Volume engine — $99 drain offer
+unclog bathroom sink,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,130,90,10,10,10,10,2.3266666666666667,15.626666666666667,Volume engine — $99 drain offer
+unclog sink,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,130,90,10,10,10,10,3.65,18.14,Volume engine — $99 drain offer
+bathroom sink clogged,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,130,90,10,10,10,10,4.1175,18.4975,Volume engine — $99 drain offer
+clogged sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,110,70,10,10,10,10,4.474,21.142000000000003,Volume engine — $99 drain offer
+blocked sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,EXACT + PHRASE,P1,110,70,10,10,10,10,4.474,21.142000000000003,Volume engine — $99 drain offer
+cleaning kitchen sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,80,40,10,10,10,10,1.5425,12.76,Volume engine — $99 drain offer
+sink drain replacement,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,80,40,10,10,10,10,3.68,27.85,Volume engine — $99 drain offer
+stinky sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,80,40,10,10,10,10,0.25,7.6850000000000005,Volume engine — $99 drain offer
+clogged kitchen sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,70,30,10,10,10,10,5.922499999999999,22.015,Volume engine — $99 drain offer
+unclog sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,70,30,10,10,10,10,4.486666666666667,20.900000000000002,Volume engine — $99 drain offer
+blocked sink,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,50,10,10,10,10,10,6.26,27.68,Volume engine — $99 drain offer
+unclog kitchen sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,50,10,10,10,10,10,2.19,18.43,Volume engine — $99 drain offer
+unblock sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+unclog bathroom sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,50,10,10,10,10,10,0.89,8.905,Volume engine — $99 drain offer
+clean bathroom sink drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+kitchen sink overflow,TARGET,P1 Drain Cleaning & Clogs,Clogged Kitchen / Sink,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+unclog shower drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,EXACT + PHRASE,P1,210,110,30,40,20,10,3.896,18.772000000000002,Volume engine — $99 drain offer
+shower drain clogged,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,EXACT + PHRASE,P1,210,110,30,40,20,10,3.896,18.772000000000002,Volume engine — $99 drain offer
+bathtub drain replacement,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,EXACT + PHRASE,P1,180,90,30,30,20,10,0.95,12.01,Volume engine — $99 drain offer
+tub drain replacement,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,EXACT + PHRASE,P1,180,90,30,30,20,10,0.95,12.01,Volume engine — $99 drain offer
+bathtub clogged,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,EXACT + PHRASE,P1,110,70,10,10,10,10,4.7275,18.2325,Volume engine — $99 drain offer
+unclog bathtub drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,90,50,10,10,10,10,2.28,15.780000000000001,Volume engine — $99 drain offer
+clogged tub drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,90,50,10,10,10,10,4.17,14.249999999999998,Volume engine — $99 drain offer
+unclog tub drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,90,50,10,10,10,10,2.28,15.780000000000001,Volume engine — $99 drain offer
+clogged bathtub drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,80,40,10,10,10,10,4.3,17.45,Volume engine — $99 drain offer
+clean shower drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,80,40,10,10,10,10,0.47,14.63,Volume engine — $99 drain offer
+stinky shower drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,80,40,10,10,10,10,2.59,37.14,Volume engine — $99 drain offer
+blocked shower drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+unblock shower drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+shower clogged,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+shower drain extension,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+bathroom drainage,TARGET,P1 Drain Cleaning & Clogs,Clogged Shower / Tub,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+clogged toilet,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,EXACT + PHRASE,P1,700,390,140,70,70,30,3.9840000000000004,19.942,Volume engine — $99 drain offer
+clogged toilet bowl,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,EXACT + PHRASE,P1,700,390,140,70,70,30,3.9840000000000004,19.942,Volume engine — $99 drain offer
+unclog toilet,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,EXACT + PHRASE,P1,460,260,110,40,30,20,4.79,21.646,Volume engine — $99 drain offer
+toilet overflow,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,EXACT + PHRASE,P1,110,70,10,10,10,10,5.12,32.29,Volume engine — $99 drain offer
+clogged toilet fix,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,PHRASE,P1,70,30,10,10,10,10,3.65,23.430000000000003,Volume engine — $99 drain offer
+blocked toilet fix,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,PHRASE,P1,70,30,10,10,10,10,3.65,23.430000000000003,Volume engine — $99 drain offer
+toilet drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,PHRASE,P1,70,30,10,10,10,10,,,Volume engine — $99 drain offer
+toilet keeps clogging,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,PHRASE,P1,60,20,10,10,10,10,3.14,10.0,Volume engine — $99 drain offer
+blocked toilet,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,PHRASE,P1,50,10,10,10,10,10,8.83,35.68,Volume engine — $99 drain offer
+blocked toilet drain,TARGET,P1 Drain Cleaning & Clogs,Clogged Toilet,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+drain cleaning,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,EXACT + PHRASE,P1,2200,1300,390,210,210,90,3.9,27.494,Volume engine — $99 drain offer
+clogged drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,EXACT + PHRASE,P1,300,210,30,30,20,10,9.429999999999998,26.174,Volume engine — $99 drain offer
+unclog drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,EXACT + PHRASE,P1,210,140,20,20,20,10,8.184000000000001,25.648000000000003,Volume engine — $99 drain offer
+clean out drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,EXACT + PHRASE,P1,150,90,20,20,10,10,7.607500000000001,17.6375,Volume engine — $99 drain offer
+driveway drainage,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,80,40,10,10,10,10,0.655,4.9399999999999995,Volume engine — $99 drain offer
+main drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,70,30,10,10,10,10,,,Volume engine — $99 drain offer
+blocked drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,60,20,10,10,10,10,7.99,20.27,Volume engine — $99 drain offer
+drain unblocking,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,60,20,10,10,10,10,4.8,17.3,Volume engine — $99 drain offer
+storm drain cleaning,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,60,20,10,10,10,10,9.18,19.57,Volume engine — $99 drain offer
+best drain unclogger,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,60,20,10,10,10,10,1.64,9.68,Volume engine — $99 drain offer
+natural drain unclogger,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,60,20,10,10,10,10,0.01,3.96,Volume engine — $99 drain offer
+drain worm,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,60,20,10,10,10,10,,,Volume engine — $99 drain offer
+blocked drain outside,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+drain pro,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+clogged garbage disposal,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,50,10,10,10,10,10,7.38,18.42,Volume engine — $99 drain offer
+unclog garbage disposal,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+drain cleaning bladder,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+stinky drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+garbage disposal drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,40,10,10,10,10,0,,,Volume engine — $99 drain offer
+simple drain,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning / Clogged Drain,PHRASE,P1,40,10,10,10,10,0,,,Volume engine — $99 drain offer
+drain cleaning services,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,EXACT + PHRASE,P1,190,110,50,10,10,10,5.27,18.03,Volume engine — $99 drain offer
+drain services,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,EXACT + PHRASE,P1,170,70,70,10,10,10,4.87,25.33,Volume engine — $99 drain offer
+drain expert,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,EXACT + PHRASE,P1,150,10,10,10,10,110,5.06,13.535,Volume engine — $99 drain offer
+drain plumbing,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,EXACT + PHRASE,P1,110,70,10,10,10,10,10.575,35.88,Volume engine — $99 drain offer
+drain cleaning company,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,PHRASE,P1,80,40,10,10,10,10,3.19,39.96,Volume engine — $99 drain offer
+plumbing cleanout,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,PHRASE,P1,80,40,10,10,10,10,9.71,23.99,Volume engine — $99 drain offer
+plumbing and drainage,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,PHRASE,P1,60,20,10,10,10,10,3.16,22.47,Volume engine — $99 drain offer
+blocked drain plumber,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,PHRASE,P1,50,10,10,10,10,10,3.59,20.35,Volume engine — $99 drain offer
+drain doctor plumbing,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning Services,PHRASE,P1,30,10,10,0,0,10,,,Volume engine — $99 drain offer
+drain cleaning near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,EXACT + PHRASE,P1,190,110,30,20,10,20,6.65,34.1,Volume engine — $99 drain offer
+drain repair near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,70,20,10,10,10,20,,,Volume engine — $99 drain offer
+drain service near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,60,20,10,10,10,10,1.87,35.53,Volume engine — $99 drain offer
+drain plumber near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,60,10,10,10,10,20,,,Volume engine — $99 drain offer
+$49 drain cleaning near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,7.98,20.12,Volume engine — $99 drain offer
+rooter service near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+drain cleaning services near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+rooter rooter near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+blocked drains near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+drain company near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+hydro jetting near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+blocked drain plumber near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,40,10,10,10,0,10,,,Volume engine — $99 drain offer
+$99 drain cleaning near me,TARGET,P1 Drain Cleaning & Clogs,Drain Cleaning – Near Me,PHRASE,P1,20,10,0,0,0,10,,,Volume engine — $99 drain offer
+rapid rooter,TARGET,P1 Drain Cleaning & Clogs,Drain Snaking / Rooter,PHRASE,P1,80,40,10,10,10,10,,,Volume engine — $99 drain offer
+rooter man plumbing,TARGET,P1 Drain Cleaning & Clogs,Drain Snaking / Rooter,PHRASE,P1,60,20,10,10,10,10,4.39,21.095,Volume engine — $99 drain offer
+drain rooter,TARGET,P1 Drain Cleaning & Clogs,Drain Snaking / Rooter,PHRASE,P1,60,20,10,10,10,10,11.26,34.43,Volume engine — $99 drain offer
+rooter service,TARGET,P1 Drain Cleaning & Clogs,Drain Snaking / Rooter,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+rooter rooter plumbing,TARGET,P1 Drain Cleaning & Clogs,Drain Snaking / Rooter,PHRASE,P1,50,10,10,10,10,10,9.885000000000002,27.525,Volume engine — $99 drain offer
+hydro jetting,TARGET,P1 Drain Cleaning & Clogs,Hydro Jetting,EXACT + PHRASE,P1,150,90,20,20,10,10,3.9825000000000004,19.4625,Volume engine — $99 drain offer
+hydro jet,TARGET,P1 Drain Cleaning & Clogs,Hydro Jetting,EXACT + PHRASE,P1,150,90,20,20,10,10,3.9825000000000004,19.4625,Volume engine — $99 drain offer
+hydro jet drain cleaning,TARGET,P1 Drain Cleaning & Clogs,Hydro Jetting,EXACT + PHRASE,P1,130,90,10,10,10,10,4.473333333333334,18.0,Volume engine — $99 drain offer
+drain jetting,TARGET,P1 Drain Cleaning & Clogs,Hydro Jetting,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+jet plumbing,TARGET,P1 Drain Cleaning & Clogs,Hydro Jetting,PHRASE,P1,50,10,10,10,10,10,,,Volume engine — $99 drain offer
+24 7 plumber,TARGET,P1 Emergency 24/7,24 Hour / After Hours,EXACT + PHRASE,P1,120,50,40,10,10,10,7.58,28.19,Highest intent — call-first
+24 hour plumber,TARGET,P1 Emergency 24/7,24 Hour / After Hours,PHRASE,P1,90,50,10,10,10,10,6.9,37.23,Highest intent — call-first
+emergency plumber,TARGET,P1 Emergency 24/7,Emergency Plumber,EXACT + PHRASE,P1,820,480,210,70,30,30,11.827499999999999,31.097500000000004,Highest intent — call-first
+emergency plumbing services,TARGET,P1 Emergency 24/7,Emergency Plumber,PHRASE,P1,90,50,10,10,10,10,14.99,34.72,Highest intent — call-first
+emergency plumber near me,TARGET,P1 Emergency 24/7,Emergency – Near Me,EXACT + PHRASE,P1,390,210,110,40,10,20,15.69,37.026666666666664,Highest intent — call-first
+24 hour plumber near me,TARGET,P1 Emergency 24/7,Emergency – Near Me,EXACT + PHRASE,P1,110,70,10,10,10,10,,,Highest intent — call-first
+24 7 plumber near me,TARGET,P1 Emergency 24/7,Emergency – Near Me,PHRASE,P1,60,20,10,10,10,10,7.31,41.15,Highest intent — call-first
+same day plumber near me,TARGET,P1 Emergency 24/7,Emergency – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Highest intent — call-first
+plumbers near me now,TARGET,P1 Emergency 24/7,Emergency – Near Me,PHRASE,P1,50,10,10,10,10,10,,,Highest intent — call-first
+same day plumber,TARGET,P1 Emergency 24/7,Same Day / Urgent,PHRASE,P1,80,40,10,10,10,10,8.7,29.56,Highest intent — call-first
+plumbing frozen pipes,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,EXACT + PHRASE,P1,290,210,20,30,20,10,,,Leak = urgent; Kitec = $8K–15K repipe
+frozen pipes,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,EXACT + PHRASE,P1,140,90,10,20,10,10,5.74,15.95,Leak = urgent; Kitec = $8K–15K repipe
+burst pipe,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,90,50,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+frozen drain pipe,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,90,50,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+burst water pipe,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,60,20,10,10,10,10,4.27,29.01,Leak = urgent; Kitec = $8K–15K repipe
+pipe burst in house,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+frozen water pipes,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+frozen pipes burst,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+frozen pipes in house,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+hot water pipe frozen,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+water main burst,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+tankless water heater frozen,TARGET,"P1 Leaks, Pipes & Kitec",Frozen / Burst Pipes,PHRASE,P1,30,10,0,0,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+kitec plumbing,TARGET,"P1 Leaks, Pipes & Kitec",Kitec / Poly-B Replacement,EXACT + PHRASE,P1,930,590,170,90,40,40,0.7200000000000001,11.979999999999999,Leak = urgent; Kitec = $8K–15K repipe
+kitec pipe,TARGET,"P1 Leaks, Pipes & Kitec",Kitec / Poly-B Replacement,EXACT + PHRASE,P1,130,90,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+polybutylene plumbing,TARGET,"P1 Leaks, Pipes & Kitec",Kitec / Poly-B Replacement,PHRASE,P1,60,20,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+leak detection,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,EXACT + PHRASE,P1,150,110,10,10,10,10,4.743333333333333,17.069999999999997,Leak = urgent; Kitec = $8K–15K repipe
+foundation leak repair,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,70,30,10,10,10,10,4.585,34.075,Leak = urgent; Kitec = $8K–15K repipe
+leak detection near me,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,60,20,10,10,10,10,2.54,24.0,Leak = urgent; Kitec = $8K–15K repipe
+leak detection company near me,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,60,20,10,10,10,10,2.54,24.0,Leak = urgent; Kitec = $8K–15K repipe
+plumbing leak detection,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,60,20,10,10,10,10,7.42,30.42,Leak = urgent; Kitec = $8K–15K repipe
+water leak detection company,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+leak detection company,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,50,10,10,10,10,10,9.9,48.6,Leak = urgent; Kitec = $8K–15K repipe
+slab leak,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+water leak detection near me,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,40,10,10,10,0,10,,,Leak = urgent; Kitec = $8K–15K repipe
+national leak detection,TARGET,"P1 Leaks, Pipes & Kitec",Leak Detection,PHRASE,P1,20,10,0,10,0,0,,,Leak = urgent; Kitec = $8K–15K repipe
+leaking pipe,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,90,50,10,10,10,10,5.48,15.05,Leak = urgent; Kitec = $8K–15K repipe
+pipe leak repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,70,30,10,10,10,10,5.15,25.425,Leak = urgent; Kitec = $8K–15K repipe
+water leak repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,60,20,10,10,10,10,9.42,27.83,Leak = urgent; Kitec = $8K–15K repipe
+trenchless pipe repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,60,20,10,10,10,10,4.79,29.09,Leak = urgent; Kitec = $8K–15K repipe
+water pipe repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+plumbing leak repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+garbage disposal leaking,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+pipe repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+copper pipe repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,0.99,6.34,Leak = urgent; Kitec = $8K–15K repipe
+pvc pipe repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+copper pipe leak repair,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+overflow pipe leaking,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,30,10,10,10,0,0,,,Leak = urgent; Kitec = $8K–15K repipe
+water leaks in my area,TARGET,"P1 Leaks, Pipes & Kitec",Pipe Leak Repair,PHRASE,P1,10,10,0,0,0,0,,,Leak = urgent; Kitec = $8K–15K repipe
+trenchless water line replacement,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,80,40,10,10,10,10,4.68,31.97,Leak = urgent; Kitec = $8K–15K repipe
+water line replacement,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,80,40,10,10,10,10,2.36,23.15,Leak = urgent; Kitec = $8K–15K repipe
+toilet water line,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,60,20,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+repipe,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+underground water line,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+main water line,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,50,10,10,10,10,10,,,Leak = urgent; Kitec = $8K–15K repipe
+pipe installation,TARGET,"P1 Leaks, Pipes & Kitec",Repiping & Water Lines,PHRASE,P1,50,10,10,10,10,10,,,Repiping intent
+septic tank repair,TARGET,P1 Sewer & Main Line,Septic,PHRASE,P1,70,30,10,10,10,10,,,High ticket ($3K–15K)
+septic tank repair near me,TARGET,P1 Sewer & Main Line,Septic,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+septic tank plumbing,TARGET,P1 Sewer & Main Line,Septic,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+sewer cleaning,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,EXACT + PHRASE,P1,150,110,10,10,10,10,4.576666666666667,32.03,High ticket ($3K–15K)
+sewer cleanout,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,80,40,10,10,10,10,6.54,22.475,High ticket ($3K–15K)
+sewer drain cleaning,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,60,20,10,10,10,10,8.030000000000001,45.89,High ticket ($3K–15K)
+clogged sewer line,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,60,20,10,10,10,10,,,High ticket ($3K–15K)
+sewer cleaning near me,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+sewer line cleaning,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+sewer line cleanout,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+main sewer line clog,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,50,10,10,10,10,10,8.91,38.15,High ticket ($3K–15K)
+sewer and drain cleaning,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,40,10,0,10,10,10,,,High ticket ($3K–15K)
+unclog sewer line through toilet,TARGET,P1 Sewer & Main Line,Sewer & Main Line Cleaning,PHRASE,P1,10,10,0,0,0,0,,,High ticket ($3K–15K)
+sewer repair,TARGET,P1 Sewer & Main Line,Sewer Line Repair & Replacement,EXACT + PHRASE,P1,130,90,10,10,10,10,,,High ticket ($3K–15K)
+sewer line repair,TARGET,P1 Sewer & Main Line,Sewer Line Repair & Replacement,PHRASE,P1,80,40,10,10,10,10,,,High ticket ($3K–15K)
+sewer repair near me,TARGET,P1 Sewer & Main Line,Sewer Line Repair & Replacement,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+sewer line repair near me,TARGET,P1 Sewer & Main Line,Sewer Line Repair & Replacement,PHRASE,P1,50,10,10,10,10,10,,,High ticket ($3K–15K)
+mainline plumbing,TARGET,P1 Sewer & Main Line,Sewer – General,EXACT + PHRASE,P1,130,90,10,10,10,10,3.31,15.92,High ticket ($3K–15K)
+sewage drain,TARGET,P1 Sewer & Main Line,Sewer – General,PHRASE,P1,70,30,10,10,10,10,10.89,23.36,High ticket ($3K–15K)
+trenchless sewer line replacement,TARGET,P1 Sewer & Main Line,Trenchless Repair & Replacement,EXACT + PHRASE,P1,110,70,10,10,10,10,,,High ticket ($3K–15K)
+trenchless sewer repair,TARGET,P1 Sewer & Main Line,Trenchless Repair & Replacement,PHRASE,P1,80,40,10,10,10,10,,,High ticket ($3K–15K)
+boiler drain,TARGET,P1 Water Heaters,Boilers,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+navien hot water heater,TARGET,P1 Water Heaters,Brand – Rinnai / Navien,PHRASE,P1,50,10,10,10,10,10,1.28,4.57,"High ticket ($2.5K–5K), +200% YoY"
+navien tankless water heater problems,TARGET,P1 Water Heaters,Brand – Rinnai / Navien,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+tankless water heater install,TARGET,P1 Water Heaters,Tankless Install & Service,EXACT + PHRASE,P1,590,390,90,50,40,20,3.2649999999999997,19.02,"High ticket ($2.5K–5K), +200% YoY"
+tankless water heater maintenance,TARGET,P1 Water Heaters,Tankless Install & Service,EXACT + PHRASE,P1,260,110,90,40,10,10,2.4699999999999998,8.465,"High ticket ($2.5K–5K), +200% YoY"
+tankless water heater repair near me,TARGET,P1 Water Heaters,Tankless Install & Service,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+tankless water heater installation near me,TARGET,P1 Water Heaters,Tankless Install & Service,PHRASE,P1,50,10,10,10,10,10,12.94,37.45,"High ticket ($2.5K–5K), +200% YoY"
+water heater installation,TARGET,P1 Water Heaters,Water Heater Install & Replace,EXACT + PHRASE,P1,360,210,70,30,30,20,4.904999999999999,22.2075,"High ticket ($2.5K–5K), +200% YoY"
+hot water installation,TARGET,P1 Water Heaters,Water Heater Install & Replace,EXACT + PHRASE,P1,360,210,70,30,30,20,4.904999999999999,22.2075,"High ticket ($2.5K–5K), +200% YoY"
+water heater replacement,TARGET,P1 Water Heaters,Water Heater Install & Replace,EXACT + PHRASE,P1,340,170,90,40,20,20,4.0,18.222,"High ticket ($2.5K–5K), +200% YoY"
+hot water tank replacement,TARGET,P1 Water Heaters,Water Heater Install & Replace,EXACT + PHRASE,P1,250,110,90,20,20,10,3.7600000000000002,20.388,"High ticket ($2.5K–5K), +200% YoY"
+hot water tank installation,TARGET,P1 Water Heaters,Water Heater Install & Replace,EXACT + PHRASE,P1,130,90,10,10,10,10,9.825000000000001,20.2375,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater replacement,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,80,40,10,10,10,10,5.84,17.0,"High ticket ($2.5K–5K), +200% YoY"
+water heater installation near me,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,80,40,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater installation,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,70,30,10,10,10,10,2.81,17.81,"High ticket ($2.5K–5K), +200% YoY"
+electric water heater installation,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,60,20,10,10,10,10,0.62,23.09,"High ticket ($2.5K–5K), +200% YoY"
+water heater replacement near me,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,50,10,10,10,10,10,7.05,16.95,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater installation near me,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+new water heater,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,50,10,10,10,10,10,1.7766666666666666,6.743333333333332,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater installation cost,TARGET,P1 Water Heaters,Water Heater Install & Replace,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+water heater leaking,TARGET,P1 Water Heaters,Water Heater Leaking,EXACT + PHRASE,P1,170,50,70,30,10,10,2.473333333333333,14.94,"High ticket ($2.5K–5K), +200% YoY"
+hot water tank leaking,TARGET,P1 Water Heaters,Water Heater Leaking,EXACT + PHRASE,P1,110,50,10,20,20,10,2.714,18.428,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater leaking,TARGET,P1 Water Heaters,Water Heater Leaking,PHRASE,P1,50,10,10,10,10,10,3.13,14.0,"High ticket ($2.5K–5K), +200% YoY"
+water heater leaking from top,TARGET,P1 Water Heaters,Water Heater Leaking,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater leaking from top,TARGET,P1 Water Heaters,Water Heater Leaking,PHRASE,P1,40,10,10,0,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+water heater maintenance,TARGET,P1 Water Heaters,Water Heater Maintenance,EXACT + PHRASE,P1,470,260,110,50,30,20,3.02,10.595,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater maintenance,TARGET,P1 Water Heaters,Water Heater Maintenance,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+water heater repair,TARGET,P1 Water Heaters,Water Heater Repair,EXACT + PHRASE,P1,390,210,50,50,50,30,4.08,29.24,"High ticket ($2.5K–5K), +200% YoY"
+water heater repair near me,TARGET,P1 Water Heaters,Water Heater Repair,EXACT + PHRASE,P1,150,70,20,30,20,10,10.840000000000002,31.66333333333333,"High ticket ($2.5K–5K), +200% YoY"
+hot water repair near me,TARGET,P1 Water Heaters,Water Heater Repair,EXACT + PHRASE,P1,150,70,20,30,20,10,10.840000000000002,31.66333333333333,"High ticket ($2.5K–5K), +200% YoY"
+hot water tank repair,TARGET,P1 Water Heaters,Water Heater Repair,PHRASE,P1,90,50,10,10,10,10,11.63,33.77,"High ticket ($2.5K–5K), +200% YoY"
+heater repair,TARGET,P1 Water Heaters,Water Heater Repair,PHRASE,P1,60,20,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater repair,TARGET,P1 Water Heaters,Water Heater Repair,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+hot water heater repair near me,TARGET,P1 Water Heaters,Water Heater Repair,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+water heater repair cost,TARGET,P1 Water Heaters,Water Heater Repair,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+hot water repairs,TARGET,P1 Water Heaters,Water Heater Repair,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+water heater plumbing,TARGET,P1 Water Heaters,Water Heater – General,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+water heater problems,TARGET,P1 Water Heaters,Water Heater – General,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+drain water heater,TARGET,P1 Water Heaters,Water Heater – General,PHRASE,P1,50,10,10,10,10,10,,,"High ticket ($2.5K–5K), +200% YoY"
+commercial plumbing,TARGET,P2 Commercial,Commercial Plumbing,EXACT + PHRASE,P2,260,140,70,20,20,10,14.13,32.44,"B2B LP, separate phone line"
+commercial plumbers near me,TARGET,P2 Commercial,Commercial Plumbing,PHRASE,P2,60,20,10,10,10,10,,,"B2B LP, separate phone line"
+industrial plumbing,TARGET,P2 Commercial,Commercial Plumbing,PHRASE,P2,60,20,10,10,10,10,,,"B2B LP, separate phone line"
+commercial plumbing companies near me,TARGET,P2 Commercial,Commercial Plumbing,PHRASE,P2,50,10,10,10,10,10,,,"B2B LP, separate phone line"
+gas fitters,TARGET,P2 Gas Lines & Fitters,Gas Fitters,EXACT + PHRASE,P2,240,140,30,20,30,20,3.296666666666667,13.306666666666667,Licensed gas fitter (TSSA) required
+gas plumber near me,TARGET,P2 Gas Lines & Fitters,Gas Fitters,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas plumber,TARGET,P2 Gas Lines & Fitters,Gas Fitters,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas fitters near me,TARGET,P2 Gas Lines & Fitters,Gas Fitters,PHRASE,P2,50,10,10,10,10,10,4.63,15.16,Licensed gas fitter (TSSA) required
+gas leak repair,TARGET,P2 Gas Lines & Fitters,Gas Leak Repair,PHRASE,P2,90,50,10,10,10,10,6.12,13.28,Licensed gas fitter (TSSA) required
+gas leak repair near me,TARGET,P2 Gas Lines & Fitters,Gas Leak Repair,PHRASE,P2,50,10,10,10,10,10,9.54,18.095,Licensed gas fitter (TSSA) required
+gas line installation,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,EXACT + PHRASE,P2,120,50,30,10,20,10,4.46,21.709999999999997,Licensed gas fitter (TSSA) required
+gas water heater installation,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,70,30,10,10,10,10,6.35,12.73,Licensed gas fitter (TSSA) required
+gas line installation near me,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,50,10,10,10,10,10,1.65,17.36,Licensed gas fitter (TSSA) required
+gas boiler installation,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas installers near me,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas pipe installation,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas pipeline for home,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas pipeline installation,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,40,10,0,10,10,10,,,Licensed gas fitter (TSSA) required
+gas geyser installation,TARGET,P2 Gas Lines & Fitters,Gas Line Installation,PHRASE,P2,10,10,0,0,0,0,,,Licensed gas fitter (TSSA) required
+gas water heater repair,TARGET,P2 Gas Lines & Fitters,Gas Water Heaters & Boilers,PHRASE,P2,90,50,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas boiler repair,TARGET,P2 Gas Lines & Fitters,Gas Water Heaters & Boilers,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+gas boiler repair near me,TARGET,P2 Gas Lines & Fitters,Gas Water Heaters & Boilers,PHRASE,P2,20,10,0,10,0,0,,,Licensed gas fitter (TSSA) required
+gas line repair near me,TARGET,P2 Gas Lines & Fitters,Gas – General,PHRASE,P2,50,10,10,10,10,10,,,Licensed gas fitter (TSSA) required
+best sump pumps,TARGET,P2 Sump Pump & Basement,Sump Pump – General,PHRASE,P2,50,10,10,10,10,10,,,Seasonal spring peak; city subsidy angle
+outdoor spigot leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Appliance Hookups & Fixtures,PHRASE,P2,80,40,10,10,10,10,2.925,11.145,"Leaking fixture — low ticket, fast job"
+outdoor spigot replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Appliance Hookups & Fixtures,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+kitchen plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Bathroom & Kitchen Plumbing,EXACT + PHRASE,P2,130,90,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+bathtub faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,EXACT + PHRASE,P2,160,90,20,20,20,10,0.65,9.296,"Lower CPC, schedule filler, upsell"
+tub faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,EXACT + PHRASE,P2,160,90,20,20,20,10,0.65,9.296,"Lower CPC, schedule filler, upsell"
+bathroom faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,EXACT + PHRASE,P2,160,90,20,20,20,10,0.65,9.296,"Lower CPC, schedule filler, upsell"
+kitchen faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,EXACT + PHRASE,P2,140,90,20,10,10,10,2.39,13.18,"Lower CPC, schedule filler, upsell"
+shower faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,EXACT + PHRASE,P2,130,70,20,20,10,10,1.45,9.535,"Lower CPC, schedule filler, upsell"
+kitchen faucet installation,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,PHRASE,P2,90,50,10,10,10,10,3.346666666666667,17.253333333333334,"Lower CPC, schedule filler, upsell"
+faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,PHRASE,P2,90,50,10,10,10,10,2.61,10.53,"Lower CPC, schedule filler, upsell"
+faucet installation,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,PHRASE,P2,80,40,10,10,10,10,5.005,16.59,"Lower CPC, schedule filler, upsell"
+outdoor faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,PHRASE,P2,70,30,10,10,10,10,2.2033333333333336,14.583333333333334,"Lower CPC, schedule filler, upsell"
+outside faucet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Install & Replace,PHRASE,P2,70,30,10,10,10,10,2.2033333333333336,14.583333333333334,"Lower CPC, schedule filler, upsell"
+bathtub faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,220,140,30,20,20,10,1.6166666666666665,12.656666666666666,"Leaking fixture — low ticket, fast job"
+tub faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,220,140,30,20,20,10,1.6166666666666665,12.656666666666666,"Leaking fixture — low ticket, fast job"
+leaking faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,180,110,30,20,10,10,1.7725000000000002,6.255,"Leaking fixture — low ticket, fast job"
+shower faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,140,70,20,20,20,10,3.01,10.01,"Leaking fixture — low ticket, fast job"
+leaky faucet repair,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,120,70,20,10,10,10,2.56,13.946666666666667,"Leaking fixture — low ticket, fast job"
+fix leaky faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,120,70,20,10,10,10,2.56,13.946666666666667,"Leaking fixture — low ticket, fast job"
+clawfoot tub faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,EXACT + PHRASE,P2,110,70,10,10,10,10,0.42,0.85,"Lower CPC, schedule filler, upsell"
+bathroom faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,90,50,10,10,10,10,2.59,16.43,"Leaking fixture — low ticket, fast job"
+outdoor faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,80,40,10,10,10,10,2.925,11.145,"Leaking fixture — low ticket, fast job"
+outside faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,80,40,10,10,10,10,2.925,11.145,"Leaking fixture — low ticket, fast job"
+kitchen faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,80,40,10,10,10,10,2.55,11.52,"Leaking fixture — low ticket, fast job"
+lavatory faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+leaking tap,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,60,20,10,10,10,10,2.88,9.16,"Leaking fixture — low ticket, fast job"
+leaking tap repair,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,60,20,10,10,10,10,3.09,16.855,"Leaking fixture — low ticket, fast job"
+fix leaking tap,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,60,20,10,10,10,10,3.09,16.855,"Leaking fixture — low ticket, fast job"
+t&s faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+outside faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+outdoor faucet repair,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,1.82,8.3,"Lower CPC, schedule filler, upsell"
+slop sink faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+kitchen faucet repair,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,3.52,25.29,"Lower CPC, schedule filler, upsell"
+outside water faucet leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,3.19,9.5,"Leaking fixture — low ticket, fast job"
+tap repair,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+plumbing tap,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+plumber taps,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+leaking mixer tap,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Leaking fixture — low ticket, fast job"
+water not coming out of faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,40,10,0,10,10,10,,,"Lower CPC, schedule filler, upsell"
+mobile home shower faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,20,10,0,0,0,10,,,"Lower CPC, schedule filler, upsell"
+mobile home bathtub faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,20,10,10,0,0,0,,,"Lower CPC, schedule filler, upsell"
+astra faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Faucet Repair,PHRASE,P2,0,0,0,0,0,0,,,"Lower CPC, schedule filler, upsell"
+garbage disposals,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,EXACT + PHRASE,P2,1130,590,140,170,140,90,1.704,9.648,"Lower CPC, schedule filler, upsell"
+garbage disposal sink,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,EXACT + PHRASE,P2,160,90,20,20,20,10,0.15,25.68,"Lower CPC, schedule filler, upsell"
+garbage disposal installation,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,80,40,10,10,10,10,2.8866666666666667,15.506666666666668,"Lower CPC, schedule filler, upsell"
+garbage disposal repair,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,70,30,10,10,10,10,7.24,35.84,"Lower CPC, schedule filler, upsell"
+fix garbage disposal,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,70,30,10,10,10,10,7.24,35.84,"Lower CPC, schedule filler, upsell"
+garbage disposal replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,50,10,10,10,10,10,0.03,12.12,"Lower CPC, schedule filler, upsell"
+garbage disposal plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+kitchen garbage disposal,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+kitchen sink garbage disposal,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+new garbage disposal,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,40,10,10,10,0,10,,,"Lower CPC, schedule filler, upsell"
+garbage disposal repair near me,TARGET,"P2 Toilets, Faucets & Fixtures",Garbage Disposal,PHRASE,P2,30,10,10,10,0,0,,,"Lower CPC, schedule filler, upsell"
+bathroom plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,EXACT + PHRASE,P2,110,70,10,10,10,10,2.95,28.77,"Lower CPC, schedule filler, upsell"
+shower plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,70,30,10,10,10,10,1.8,14.12,"Lower CPC, schedule filler, upsell"
+shower replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,60,20,10,10,10,10,3.46,12.985,"Lower CPC, schedule filler, upsell"
+bathroom sink replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,60,20,10,10,10,10,1.4566666666666668,5.266666666666667,"Lower CPC, schedule filler, upsell"
+basement bathroom plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,60,20,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+shower replacement near me,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+shower repair,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,2.2800000000000002,15.585,"Lower CPC, schedule filler, upsell"
+shower repair near me,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,3.7,8.0,"Lower CPC, schedule filler, upsell"
+bathroom plumbers near me,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+bathtub plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+bathroom sink plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+bathroom sink leaking underneath,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,1.34,4.73,"Leaking fixture — low ticket, fast job"
+plumb tub,TARGET,"P2 Toilets, Faucets & Fixtures",Shower & Tub,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+kitchen sink installation,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,EXACT + PHRASE,P2,110,70,10,10,10,10,2.31,18.23,"Lower CPC, schedule filler, upsell"
+kitchen sink replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,EXACT + PHRASE,P2,110,70,10,10,10,10,0.7,11.32,"Lower CPC, schedule filler, upsell"
+sink installation,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,90,50,10,10,10,10,1.1,11.7,"Lower CPC, schedule filler, upsell"
+kitchen sink plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,90,50,10,10,10,10,4.415,21.3,"Lower CPC, schedule filler, upsell"
+sink replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,90,50,10,10,10,10,1.4533333333333331,7.3500000000000005,"Lower CPC, schedule filler, upsell"
+sink repair,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,70,30,10,10,10,10,4.72,18.69,"Lower CPC, schedule filler, upsell"
+sink leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,70,30,10,10,10,10,2.41,8.65,"Leaking fixture — low ticket, fast job"
+under sink plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+leak under kitchen sink,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,60,20,10,10,10,10,1.865,9.495,"Leaking fixture — low ticket, fast job"
+sink plumbing,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,60,20,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+basement sink,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,60,20,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+kitchen sink leaking,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,60,20,10,10,10,10,2.62,10.61,"Leaking fixture — low ticket, fast job"
+kitchen sink leaking underneath,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,60,20,10,10,10,10,1.865,9.495,"Leaking fixture — low ticket, fast job"
+sink leaking underneath,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,60,20,10,10,10,10,2.55,7.07,"Leaking fixture — low ticket, fast job"
+kitchen sink repair,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+ceramic sink repair,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+insinkerator installation,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+plumbing under kitchen sink,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+a sink,TARGET,"P2 Toilets, Faucets & Fixtures",Sink Install & Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+toilet installation,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Install & Replace,EXACT + PHRASE,P2,440,260,110,30,30,10,3.3040000000000007,14.213999999999999,"Lower CPC, schedule filler, upsell"
+toilet replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Install & Replace,EXACT + PHRASE,P2,410,210,140,30,20,10,2.552,10.41,"Lower CPC, schedule filler, upsell"
+toilet installation near me,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Install & Replace,EXACT + PHRASE,P2,110,70,10,10,10,10,7.99,35.86,"Lower CPC, schedule filler, upsell"
+toilet tank replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Install & Replace,PHRASE,P2,80,40,10,10,10,10,0.195,13.065000000000001,"Lower CPC, schedule filler, upsell"
+toilet flusher replacement,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Install & Replace,PHRASE,P2,60,20,10,10,10,10,0.16,11.699999999999998,"Lower CPC, schedule filler, upsell"
+new toilet installation,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Install & Replace,PHRASE,P2,50,20,10,10,10,0,3.55,6.65,"Lower CPC, schedule filler, upsell"
+toilet repair,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,EXACT + PHRASE,P2,350,170,90,40,30,20,3.5375,17.1325,"Lower CPC, schedule filler, upsell"
+leaking toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,EXACT + PHRASE,P2,110,70,10,10,10,10,2.22,12.84,"Leaking fixture — low ticket, fast job"
+toilet repair near me,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,EXACT + PHRASE,P2,100,20,50,10,10,10,,,"Lower CPC, schedule filler, upsell"
+toilet plumber,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,90,50,10,10,10,10,9.085,29.990000000000002,"Lower CPC, schedule filler, upsell"
+toilet leaking from tank,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,80,40,10,10,10,10,1.98,10.665,"Leaking fixture — low ticket, fast job"
+icera toilets,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,80,40,10,10,10,10,0.21,1.98,"Lower CPC, schedule filler, upsell"
+inside of toilet tank,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,80,40,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+eljer toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+crane plumbing toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+toilet faucet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+crane toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+plunging a toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,70,30,10,10,10,10,0.06,10.4,"Lower CPC, schedule filler, upsell"
+no water in toilet tank,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,70,30,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+basement toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,60,20,10,10,10,10,0.2,0.57,"Lower CPC, schedule filler, upsell"
+toilet plumbers near me,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+unblock toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,4.84,14.015,"Lower CPC, schedule filler, upsell"
+saniflo macerating toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+sterling toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+saniflo toilet problems,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+briggs toilet,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+toilet problems,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+toilet mechanism,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,0.07,1.26,"Lower CPC, schedule filler, upsell"
+toilet chain broke,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+low water in toilet bowl,TARGET,"P2 Toilets, Faucets & Fixtures",Toilet Repair,PHRASE,P2,50,10,10,10,10,10,,,"Lower CPC, schedule filler, upsell"
+superior plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,320,170,50,30,30,40,2.95,11.568000000000001,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+advanced plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,250,210,10,10,10,10,3.19,10.68,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+master plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,230,140,20,20,20,30,2.9450000000000003,12.0,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+total plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,190,140,10,10,10,20,2.755,9.19,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+precise plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,130,70,30,10,10,10,2.3049999999999997,12.885,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+one call plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,110,70,10,10,10,10,4.99,27.3,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+mr rooter near me,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,100,50,20,10,10,10,6.72,23.63,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+roto rooter near me,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,90,50,10,10,10,10,8.7275,26.932499999999997,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+roto rooter plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,80,40,10,10,10,10,5.028,22.512,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+aaa plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,70,30,10,10,10,10,4.39,17.26,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+certified plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,70,30,10,10,10,10,0.75,27.43,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+independent plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,70,30,10,10,10,10,2.67,17.01,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+eco plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,20,10,10,10,10,14.41,41.1,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+liberty plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,20,10,10,10,10,2.37,13.945,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+pro plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,20,10,10,10,10,3.09,20.4,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+paul's plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,20,10,10,10,10,3.91,9.0,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+phoenix plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,20,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+h20 plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,20,10,10,10,10,4.44,25.19,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+powell plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,60,10,10,20,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+roto rooter $99 special,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+action plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+roto rooter prices,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,3.05,16.74,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+all pro plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+day and night plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+roto rooter services,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+roto rooter cost,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+advantage plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+expert plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,2.48,15.97,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+twin home experts,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,50,10,10,10,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+a total plumbing,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,30,10,0,0,10,10,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+a1 sewer and drain,COMPETITOR,P2 Competitor,Competitor brands,PHRASE,P2,20,10,10,0,0,0,,,"Competitor brand — bid low, own name in ad only (no trademark in ad text)"
+snaking a drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,3100,1900,390,320,320,170,3.8820000000000006,18.345999999999997,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,1010,590,140,140,90,50,3.6566666666666667,20.76,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+sink drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,700,390,90,90,90,40,0.21400000000000002,10.053999999999998,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+drain sink,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,700,390,90,90,90,40,0.21400000000000002,10.053999999999998,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+sink drainage,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,700,390,90,90,90,40,0.21400000000000002,10.053999999999998,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+snaking a toilet,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,640,390,70,50,90,40,4.4479999999999995,15.624,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+shower drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,570,320,70,90,50,40,0.125,2.1,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+bath drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,430,260,50,50,50,20,0.515,11.28,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+kitchen sink drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,320,170,40,40,50,20,0.64,12.18,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+bathroom sink drain,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,240,140,30,30,30,10,0.1275,4.43,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+cleanout,TEST,P3 Research & Pricing,Drain Head Terms (DIY-risk),PHRASE,P3,220,140,20,30,20,10,,,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+outdoor faucet,TEST,P3 Research & Pricing,Fixture Head Terms (DIY-risk),PHRASE,P3,260,140,30,40,30,20,0.08333333333333333,1.6300000000000001,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+outside water faucet,TEST,P3 Research & Pricing,Fixture Head Terms (DIY-risk),PHRASE,P3,260,140,30,40,30,20,0.08333333333333333,1.6300000000000001,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+toilet installation cost,TEST,P3 Research & Pricing,Fixture Pricing,PHRASE,P3,320,260,20,20,10,10,1.6640000000000001,12.45,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+toilet replacement cost,TEST,P3 Research & Pricing,Fixture Pricing,PHRASE,P3,210,170,10,10,10,10,2.154,9.732,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+shower replacement cost,TEST,P3 Research & Pricing,Fixture Pricing,PHRASE,P3,50,10,10,10,10,10,2.5549999999999997,10.135,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+garbage disposal installation cost,TEST,P3 Research & Pricing,Fixture Pricing,PHRASE,P3,50,10,10,10,10,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+garbage disposal replacement cost,TEST,P3 Research & Pricing,Fixture Pricing,PHRASE,P3,50,10,10,10,10,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+water leak detection,TEST,P3 Research & Pricing,Leak Detection Research,PHRASE,P3,650,320,140,90,70,30,0.42400000000000004,8.746,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+slab leak repair cost,TEST,P3 Research & Pricing,Leak Detection Research,PHRASE,P3,40,10,10,10,0,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+sewer line replacement cost,TEST,P3 Research & Pricing,Sewer / Leak Pricing,PHRASE,P3,50,10,10,10,10,10,8.68,50.55,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+hydro jetting cost,TEST,P3 Research & Pricing,Sewer / Leak Pricing,PHRASE,P3,50,10,10,10,10,10,4.75,20.24,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+trenchless sewer line replacement cost,TEST,P3 Research & Pricing,Sewer / Leak Pricing,PHRASE,P3,40,10,10,10,0,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+roto rooter sewer line replacement cost,TEST,P3 Research & Pricing,Sewer / Leak Pricing,PHRASE,P3,40,10,10,10,10,0,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+sump pumps,TEST,P3 Research & Pricing,Sump Pump Research,PHRASE,P3,4620,2900,480,590,390,260,0.7979999999999999,7.4879999999999995,"Head term, mixed DIY/product intent (CPC low-range < $1 = retail advertisers). Test Month 2 with strict negatives"
+rinnai tankless water heater,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,1230,590,170,170,210,90,2.16,5.678,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+navien tankless water heater,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,840,480,110,110,90,50,1.4599999999999997,4.5200000000000005,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+cost of tankless water heater,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,310,170,40,40,40,20,1.4200000000000002,4.178,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+tankless water heater installation cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,200,110,30,20,30,10,2.048,6.2620000000000005,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+water heater installation cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,140,90,20,10,10,10,2.27,8.046666666666667,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+navien water heater,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,110,70,10,10,10,10,1.08,3.543333333333333,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+rinnai tankless,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,100,50,10,20,10,10,1.9933333333333334,5.6000000000000005,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+water heater replacement cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,90,50,10,10,10,10,2.13,11.0875,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+hot water tank replacement cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,80,40,10,10,10,10,1.3599999999999999,11.6775,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+navien tankless,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,80,40,10,10,10,10,0.5449999999999999,4.005,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+gas water heater installation cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,60,20,10,10,10,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+hot water heater replacement cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,50,10,10,10,10,10,0.97,3.51,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+water heater replacement cost 50 gallon,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,50,10,10,10,10,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+gas water heater replacement cost,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,50,10,10,10,10,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+water heater replacement cost 40 gallon,TEST,P3 Research & Pricing,Water Heater Research,PHRASE,P3,50,10,10,10,10,10,,,"Research/pricing intent → pricing LP, low tCPA, Month 2"
+reliable plumbing,SKIP,,,,,80,40,10,10,10,10,2.51,7.85,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+quality plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+discount plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+valley plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+johns plumbing,SKIP,,,,,50,10,10,10,10,10,3.78,9.25,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+citywide plumbing,SKIP,,,,,50,10,10,10,10,10,4.1,14.97,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+all star plumbing,SKIP,,,,,50,10,10,10,10,10,2.91,8.59,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+a 1 plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+universal plumbing,SKIP,,,,,50,10,10,10,10,10,3.08,24.0,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+plumbing today,SKIP,,,,,50,10,10,10,10,10,,,Brand-like / ambiguous — not worth a bid
+a plumber,SKIP,,,,,50,10,10,10,10,10,7.05,18.13,Brand-like / ambiguous — not worth a bid
+crown plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+united plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+a to z plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+jc plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+first choice plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+pipeline plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+carters plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+rapid plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+progressive plumbing,SKIP,,,,,50,10,10,10,10,10,2.8,11.56,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+power plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+aaron's plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+knight plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+prestige plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+marks plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+joe's plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+mann plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+5 star plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+complete plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+rescue plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+scotts plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+jp plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+1st choice plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+infinity plumbing,SKIP,,,,,50,10,10,10,10,10,2.14,14.27,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+water plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+national plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+ryan plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+baker plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+c&c plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+triton plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+peters plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+veterans plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+bk plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+pipeworks plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+ab plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+plumbrite,SKIP,,,,,50,10,10,10,10,10,,,Brand-like / ambiguous — not worth a bid
+sloan plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+plumb quick,SKIP,,,,,50,10,10,10,10,10,,,Brand-like / ambiguous — not worth a bid
+water works plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+sanitary plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+flow plumbing,SKIP,,,,,50,10,10,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+plumb it,SKIP,,,,,50,10,10,10,10,10,,,Brand-like / ambiguous — not worth a bid
+all hours plumbing,SKIP,,,,,40,10,10,10,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+smith plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+economy plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+champion plumbing,SKIP,,,,,40,10,0,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+hoffman plumbing,SKIP,,,,,40,10,0,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+r&r plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+lakeside plumbing,SKIP,,,,,40,10,10,0,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+evans plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+20 20 plumbing,SKIP,,,,,40,10,10,10,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+sunrise plumbing,SKIP,,,,,40,10,10,10,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+r and r plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+fast flow plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+j and j plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+ken's plumbing,SKIP,,,,,40,10,10,10,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+rj plumbing,SKIP,,,,,40,10,0,10,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+m&m plumbing,SKIP,,,,,40,10,10,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+custom plumbing,SKIP,,,,,40,10,10,10,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+best pipes for plumbing,SKIP,,,,,40,10,10,0,10,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+angi plumbing,SKIP,,,,,30,10,10,10,0,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+sanders plumbing,SKIP,,,,,30,10,0,10,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+charlotte plumbing,SKIP,,,,,30,10,10,10,0,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+all clear plumbing,SKIP,,,,,30,10,0,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+allen's plumbing,SKIP,,,,,30,10,0,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+o brien plumbing,SKIP,,,,,30,10,10,0,10,0,2.57,38.53,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+ultimate plumbing,SKIP,,,,,30,10,0,10,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+consolidated plumbing,SKIP,,,,,30,10,10,0,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+all plumbing,SKIP,,,,,30,10,10,0,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+polyplumb,SKIP,,,,,30,10,0,0,10,10,,,Brand-like / ambiguous — not worth a bid
+plumber bathware,SKIP,,,,,30,10,10,0,10,0,,,Brand-like / ambiguous — not worth a bid
+antigua plumbing,SKIP,,,,,30,10,10,0,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+hughes plumbing,SKIP,,,,,20,10,0,0,10,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+d and d plumbing,SKIP,,,,,20,10,10,0,0,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+above all plumbing,SKIP,,,,,20,10,0,0,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+done plumbing,SKIP,,,,,10,10,0,0,0,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+hep plumbing,SKIP,,,,,10,0,0,0,0,10,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+north coast plumbing,SKIP,,,,,10,10,0,0,0,0,,,Looks like a company name (Keyword Planner filler) — leave to broad match / search terms
+build and plumb,SKIP,,,,,10,10,0,0,0,0,,,Brand-like / ambiguous — not worth a bid
+plumbing carefree,SKIP,,,,,0,0,0,0,0,0,,,Brand-like / ambiguous — not worth a bid
+ptrap,NEGATIVE,,,,,1320,880,140,140,90,70,0.23,13.02,"Parts / materials — buyer, not service"
+water closet,NEGATIVE,,,,,930,590,110,110,70,50,,,"Parts / materials — buyer, not service"
+commercial toilets,NEGATIVE,,,,,600,70,20,480,20,10,0.8766666666666666,6.536666666666666,"Parts / materials — buyer, not service"
+drain pipes,NEGATIVE,,,,,520,320,50,70,50,30,0.5000000000000001,9.322,"Parts / materials — buyer, not service"
+emco plumbing,NEGATIVE,,,,,410,260,50,40,30,30,1.1433333333333333,6.3999999999999995,Supplier / product brand
+sharkbite connectors,NEGATIVE,,,,,310,170,40,40,40,20,0.0675,0.27,Supplier / product brand
+toilet bowl tank,NEGATIVE,,,,,310,210,30,30,30,10,0.12,3.86,"Parts / materials — buyer, not service"
+delta bathtub faucet,NEGATIVE,,,,,300,170,40,40,30,20,0.22000000000000003,1.6260000000000001,Supplier / product brand
+toilet clog remover,NEGATIVE,,,,,270,140,40,30,50,10,3.26,15.092500000000001,Chemical product
+household plumbing,NEGATIVE,,,,,250,210,10,10,10,10,1.29,4.2,Ambiguous / no service intent
+house plumbing,NEGATIVE,,,,,250,210,10,10,10,10,1.29,4.2,Ambiguous / no service intent
+drain declogger,NEGATIVE,,,,,190,90,30,20,40,10,6.755,19.205,Chemical product
+drano for toilets,NEGATIVE,,,,,160,90,20,10,30,10,0.30333333333333334,9.516666666666667,Chemical product
+cpvc pipe,NEGATIVE,,,,,150,90,20,10,10,20,,,"Parts / materials — buyer, not service"
+tub drains,NEGATIVE,,,,,150,90,10,20,20,10,,,"Parts / materials — buyer, not service"
+gerber toilet,NEGATIVE,,,,,140,90,20,10,10,10,0.24,1.03,Supplier / product brand
+toilet bolts,NEGATIVE,,,,,140,90,10,20,10,10,0.08,0.35,"Parts / materials — buyer, not service"
+moen adler shower faucet,NEGATIVE,,,,,140,70,20,20,20,10,,,Supplier / product brand
+pvc drain pipe,NEGATIVE,,,,,130,70,20,10,10,20,,,"Parts / materials — buyer, not service"
+best drain opener,NEGATIVE,,,,,120,70,10,10,20,10,0.03333333333333333,5.77,Chemical product
+water heater expansion tank,NEGATIVE,,,,,110,70,10,10,10,10,,,"Parts / materials — buyer, not service"
+plumbing pipe,NEGATIVE,,,,,110,70,10,10,10,10,,,"Parts / materials — buyer, not service"
+hot water expansion tank,NEGATIVE,,,,,110,70,10,10,10,10,,,"Parts / materials — buyer, not service"
+moen adler bathroom faucet,NEGATIVE,,,,,100,50,20,10,10,10,0.17,0.9,Supplier / product brand
+plumbline,NEGATIVE,,,,,90,50,10,10,10,10,,,Ambiguous / no service intent
+commercial faucet,NEGATIVE,,,,,90,50,10,10,10,10,0.615,2.15,"Parts / materials — buyer, not service"
+corrugated pipe,NEGATIVE,,,,,90,50,10,10,10,10,,,"Parts / materials — buyer, not service"
+sharkbite plumbing,NEGATIVE,,,,,90,50,10,10,10,10,,,Supplier / product brand
+home depot toilet installation,NEGATIVE,,,,,90,50,10,10,10,10,1.216,3.646,Retail — intent = buy product
+pipe connectors,NEGATIVE,,,,,90,40,10,10,20,10,,,"Parts / materials — buyer, not service"
+pop up sink drain,NEGATIVE,,,,,90,50,10,10,10,10,0.11,0.4,"Parts / materials — buyer, not service"
+mountain plumbing,NEGATIVE,,,,,90,50,10,10,10,10,,,Supplier / product brand
+plumbing business,NEGATIVE,,,,,90,50,10,10,10,10,1.11,4.6,Ambiguous / no service intent
+toilet water tank,NEGATIVE,,,,,90,50,10,10,10,10,0.1,4.48,"Parts / materials — buyer, not service"
+copper plumbing,NEGATIVE,,,,,90,50,10,10,10,10,,,"Parts / materials — buyer, not service"
+sink pipe,NEGATIVE,,,,,90,50,10,10,10,10,,,"Parts / materials — buyer, not service"
+taps plumbing,NEGATIVE,,,,,90,50,10,10,10,10,3.61,12.87,Supplier / product brand
+4in pvc pipe,NEGATIVE,,,,,90,50,10,10,10,10,0.13,1.51,"Parts / materials — buyer, not service"
+home depot pipe,NEGATIVE,,,,,90,50,10,10,10,10,,,Retail — intent = buy product
+mansfield toilet,NEGATIVE,,,,,80,40,10,10,10,10,,,Supplier / product brand
+best way to unclog a toilet,NEGATIVE,,,,,80,40,10,10,10,10,0.013333333333333334,5.123333333333334,Info / DIY
+plumbing works,NEGATIVE,,,,,80,40,10,10,10,10,1.32,21.75,Ambiguous / no service intent
+sink drain pipe,NEGATIVE,,,,,80,40,10,10,10,10,0.17,10.05,"Parts / materials — buyer, not service"
+pvc plumbing,NEGATIVE,,,,,80,40,10,10,10,10,,,"Parts / materials — buyer, not service"
+toilet pipe,NEGATIVE,,,,,80,40,10,10,10,10,,,"Parts / materials — buyer, not service"
+water closet toilet,NEGATIVE,,,,,80,40,10,10,10,10,,,"Parts / materials — buyer, not service"
+wirsbo pipe,NEGATIVE,,,,,80,40,10,10,10,10,,,Supplier / product brand
+plumber worker,NEGATIVE,,,,,80,40,10,10,10,10,1.32,21.75,Jobs / education
+corrugated drain pipe,NEGATIVE,,,,,70,30,10,10,10,10,,,"Parts / materials — buyer, not service"
+moen rinza,NEGATIVE,,,,,70,30,10,10,10,10,0.22,1.18,Supplier / product brand
+kitchen sink drain pipe,NEGATIVE,,,,,70,30,10,10,10,10,,,"Parts / materials — buyer, not service"
+hot water heater expansion tank,NEGATIVE,,,,,70,30,10,10,10,10,,,"Parts / materials — buyer, not service"
+kitchen sink pipes,NEGATIVE,,,,,70,30,10,10,10,10,,,"Parts / materials — buyer, not service"
+under sink pipes,NEGATIVE,,,,,70,30,10,10,10,10,,,"Parts / materials — buyer, not service"
+pipe chase,NEGATIVE,,,,,70,30,10,10,10,10,,,"Parts / materials — buyer, not service"
+clogged pipes,NEGATIVE,,,,,60,20,10,10,10,10,11.704999999999998,26.775,"Parts / materials — buyer, not service"
+delta tub faucet,NEGATIVE,,,,,60,20,10,10,10,10,,,Supplier / product brand
+8 pvc pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+home depot gas water heater,NEGATIVE,,,,,60,20,10,10,10,10,0.91,5.54,Retail — intent = buy product
+2 copper pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+gerber viper toilet,NEGATIVE,,,,,60,20,10,10,10,10,,,Supplier / product brand
+sink declogger,NEGATIVE,,,,,60,20,10,10,10,10,4.67,15.91,Chemical product
+pvc water pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+reddit plumbing,NEGATIVE,,,,,60,20,10,10,10,10,,,Info / DIY
+water drain pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+plumbing connectors,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+industrial pipes,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+sanitary pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+toilet drain pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+faucet pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+kitchen pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+toilet overflow pipe,NEGATIVE,,,,,60,20,10,10,10,10,,,"Parts / materials — buyer, not service"
+my plumber,NEGATIVE,,,,,50,10,10,10,10,10,,,Ambiguous / no service intent
+clogged drain pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+lowes tankless water heater,NEGATIVE,,,,,50,10,10,10,10,10,,,Retail — intent = buy product
+polybutylene pipes,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+plumbing and electrical,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+best way to unclog shower drain,NEGATIVE,,,,,50,10,10,10,10,10,0.01,1.76,Info / DIY
+rooto professional drain opener,NEGATIVE,,,,,50,10,10,10,10,10,,,Chemical product
+kohler crue faucet,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+plumbing problems,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+kohler plumbing,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+best way to unclog a sink,NEGATIVE,,,,,50,10,10,10,10,10,0.01,8.66,Info / DIY
+best way to unblock a toilet,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+pipe unblocker,NEGATIVE,,,,,50,10,10,10,10,10,,,Chemical product
+viega manabloc,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+manabloc,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+sewer drain pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+pipe works,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+6 drain pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+c900 pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+pvc pipe near me,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+spiral pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+delta faucet repair,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+best toilet clog remover,NEGATIVE,,,,,50,10,10,10,10,10,,,Chemical product
+drano for shower drain,NEGATIVE,,,,,50,10,10,10,10,10,,,Chemical product
+plumbing 101,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+plumbing for dummies,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+threaded pvc pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+kohler toilet repair,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+stormwater pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+toilet flexi pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+delta drain,NEGATIVE,,,,,50,10,10,10,10,10,,,Supplier / product brand
+bathroom sink drain pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+water heater overflow pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+hot water pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+clay sewer pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+indoor plumbing,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+water line pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+pvc pipe lowes,NEGATIVE,,,,,50,10,10,10,10,10,,,Retail — intent = buy product
+cts pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+pvc drain,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+water heater pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+rehau pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+sink overflow pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+project zomboid plumbing,NEGATIVE,,,,,50,10,10,10,10,10,,,Info / DIY
+toilet leaking from tank bolts,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+u pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+discharge pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+lateral pipe,NEGATIVE,,,,,50,10,10,10,10,10,,,"Parts / materials — buyer, not service"
+lowes water heater installation cost,NEGATIVE,,,,,40,10,10,0,10,10,,,Retail — intent = buy product
+lowes plumbing,NEGATIVE,,,,,40,10,10,10,10,0,,,Retail — intent = buy product
+delta portwood faucet,NEGATIVE,,,,,40,10,10,10,10,0,,,Supplier / product brand
+unfreeze pipes,NEGATIVE,,,,,40,10,10,0,10,10,,,"Parts / materials — buyer, not service"
+water pipe for home,NEGATIVE,,,,,40,10,10,10,10,0,,,Supplier / product brand
+roebic septic tank treatment,NEGATIVE,,,,,30,10,10,0,10,0,,,Chemical product
+delta flynn faucet,NEGATIVE,,,,,30,10,10,0,10,0,,,Supplier / product brand
+101 plumbing,NEGATIVE,,,,,30,10,10,10,0,0,,,Info / DIY
+boiler overflow pipe,NEGATIVE,,,,,30,10,10,10,0,0,,,"Parts / materials — buyer, not service"
+precision pipes,NEGATIVE,,,,,30,10,10,10,0,0,,,"Parts / materials — buyer, not service"
+astral cpvc pipe,NEGATIVE,,,,,30,10,10,0,10,0,,,"Parts / materials — buyer, not service"
+polycop pipe,NEGATIVE,,,,,20,10,10,0,0,0,,,"Parts / materials — buyer, not service"
+geyser pipe,NEGATIVE,,,,,20,10,0,0,10,0,,,"Parts / materials — buyer, not service"
+mdpe water pipe,NEGATIVE,,,,,10,10,0,0,0,0,,,"Parts / materials — buyer, not service"
+hep20 pipe,NEGATIVE,,,,,10,10,0,0,0,0,,,"Parts / materials — buyer, not service"
+lapeta pipe,NEGATIVE,,,,,0,0,0,0,0,0,,,"Parts / materials — buyer, not service"
