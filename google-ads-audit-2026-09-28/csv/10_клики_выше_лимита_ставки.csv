@@ -1,9 +1,9 @@
 ﻿Период,Campaign,Стратегия / лимит,Ключ → запрос,Клики,Расход $,CPC $,Конверсии,Комментарий
-21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,"""wolf repair near me"" → запрос «wolf stove repair near me»",2,267.48,133.74,1,"ВЫШЕ лимита. 2 клика на 1 показ, средняя $133.74 — минимум один клик ≥ $134"
+21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,"""wolf repair near me"" → запрос «wolf stove repair near me»",2,267.48,133.74,1,"ВЫШЕ лимита. 2 клика на 1 показ, средняя $133,74 — минимум один клик ≥ $134"
 21–27.09 (21.09),CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,"""miele dishwasher error"" (сейчас на паузе, группа удалена)",1,123.19,123.19,0,ВЫШЕ лимита. Запрос про код ошибки — самый дорогой клик без результата
 21–27.09,MIAMI | Lux Search | tCPA 2026,FL LUX | cap 60,[miele dishwasher repair],1,120.6,120.6,1,ВЫШЕ лимита. 2× лимита
 21–27.09 (27.09),FL-BROWARD | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60","""emergency sub zero repair""",1,122.74,122.74,1,"ВЫШЕ лимита. 2× лимита, первый день кампании"
-21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,"""sub zero specialist"" (удалено вами)",1,123.89,123.89,0,"ВЫШЕ лимита. Группа «03 Sub-Zero | Repair General»: $426,74 за 10 кликов, из них 8 видимых на $292,48 — остаток $134,26 за 2 клика = $123,89 + $10,37"
+21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,"""sub zero specialist"" (удалено вами)",1,123.89,123.89,0,"ВЫШЕ лимита. Отчёт по ключам за неделю: 1 клик, $123,89, 0 конв.; сам запрос скрыт Google («другие запросы»). Ключ вы уже удалили"
 28.09,FL-BROWARD | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60","[subzero repair near me] (Weston, FL)",1,219.69,219.69,1,"ВЫШЕ лимита. 3,7× лимита. Ключ с QS 3: посадочная «ниже среднего», релевантность «ниже среднего»"
 28.09,FL-SARASOTA | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60",[sub zero ice maker not making ice],1,101.21,101.21,0,"ВЫШЕ лимита. 1,7× лимита, без конверсии"
 28.09,FL-NAPLES-FORT-MYERS | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60",[subzero repair naples],1,77.84,77.84,1,"ВЫШЕ лимита. 1,3× лимита"
