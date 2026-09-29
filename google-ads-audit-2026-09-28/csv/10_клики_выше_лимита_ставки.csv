@@ -8,14 +8,14 @@
 28.09,FL-SARASOTA | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60",[sub zero ice maker not making ice],1,101.21,101.21,0,"ВЫШЕ лимита. 1,7× лимита, без конверсии"
 28.09,FL-NAPLES-FORT-MYERS | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60",[subzero repair naples],1,77.84,77.84,1,"ВЫШЕ лимита. 1,3× лимита"
 28.09,CHI-CITY | Sub-Zero | tCPA 2026,175/45,[sub zero maintenance service],1,44.42,44.42,—,ПОД лимитом ($45) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,CHICAGO | Lux Search,cap 70,[sub zero appliance repair chicago],1,69.5,69.5,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,CHICAGO | Lux Search,cap 70,[thermador refrigerator repair],1,67.7,67.7,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,CHI-NORTHWEST | Sub-Zero,cap 70,"""sub zero refrigerator service""",1,66.42,66.42,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,MIAMI | Lux Search,cap 60,«viking repair service near me»,1,59.74,59.74,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-28.09,MIAMI | Lux Search,cap 60,[miele appliance repair],1,59.77,59.77,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-28.09,MIAMI | Lux Search,cap 60,[viking appliance repair],1,58.73,58.73,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,MIAMI | Lux Search,cap 60,[miele appliance repair],1,58.65,58.65,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,TAMPA | Lux Search,cap 60,«jenn air refrigerator repair»,1,57.35,57.35,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,CHICAGO | Lux Search,cap 70,«fisher and paykel service near me»,1,56.09,56.09,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-28.09,CHI-NORTH-SHORE | Sub-Zero,cap 70,[sub zero repairman near me],1,55.9,55.9,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
-21–27.09,FL-PINELLAS | Sub-Zero,cap 60,"""sub zero authorized service""",1,55.44,55.44,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,[sub zero appliance repair chicago],1,69.5,69.5,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,[thermador refrigerator repair],1,67.7,67.7,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,CHI-NORTHWEST | Sub-Zero | tCPA 2026,CHI LUX | cap 70,"""sub zero refrigerator service""",1,66.42,66.42,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,MIAMI | Lux Search | tCPA 2026,FL LUX | cap 60,«viking repair service near me»,1,59.74,59.74,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+28.09,MIAMI | Lux Search | tCPA 2026,FL LUX | cap 60,[miele appliance repair],1,59.77,59.77,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+28.09,MIAMI | Lux Search | tCPA 2026,FL LUX | cap 60,[viking appliance repair],1,58.73,58.73,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,MIAMI | Lux Search | tCPA 2026,FL LUX | cap 60,[miele appliance repair],1,58.65,58.65,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,TAMPA | Lux Search | tCPA 2026,FL LUX | cap 60,«jenn air refrigerator repair»,1,57.35,57.35,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,CHICAGO | Lux Search | MaxConv 2026,CHI LUX | cap 70,«fisher and paykel service near me»,1,56.09,56.09,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+28.09,CHI-NORTH-SHORE | Sub-Zero | tCPA 2026,CHI LUX | cap 70,[sub zero repairman near me],1,55.9,55.9,—,ПОД лимитом ($70) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
+21–27.09,FL-PINELLAS | Sub-Zero | tCPA 2026,"TA, MI SUBZERO | cap 60","""sub zero authorized service""",1,55.44,55.44,—,ПОД лимитом ($60) — лимит здесь сработал; конверсия по этому клику не отслеживалась отдельно
