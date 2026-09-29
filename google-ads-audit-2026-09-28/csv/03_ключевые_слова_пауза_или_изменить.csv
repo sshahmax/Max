@@ -1,6 +1,6 @@
 ﻿Campaign,Ad Group,Keyword,Criterion Type,Действие / Status,Причина,"Расход 8 дн., $",Клики,Конверсии
 DESTIN | Lux Search | tCPA 2026,17 Vacation Rentals & Property Managers,appliance repair santa rosa beach,Phrase,Paused,"Общий запрос без люкс-бренда: $102,40, 4 клика, 0 конв. за 8 дней; ловит «mr appliance santa rosa beach fl» (конкурент)",102.4,4,0
-DESTIN | Lux Search | tCPA 2026,17 Vacation Rentals & Property Managers,(вся группа),,Paused,"Поставить на паузу всю группу или оставить только точные ключи с люкс-брендом («sub zero repair 30a», «wolf repair santa rosa beach»)",102.4,4,0
+DESTIN | Lux Search | tCPA 2026,17 Vacation Rentals & Property Managers,(вся группа),—,Paused,"Поставить на паузу всю группу или оставить только точные ключи с люкс-брендом («sub zero repair 30a», «wolf repair santa rosa beach»)",102.4,4,0
 CHICAGO | Lux Search | MaxConv 2026,06 Wolf | Oven & General,wolf repair near me,Phrase,Paused → заменить точными,"Фразовый ключ дал 2 клика по $133,74 на запрос «wolf stove repair near me» (1 конв.). Заменить на [wolf repair near me] + [wolf stove repair near me] (CSV 02)",267.48,2,1
 CHICAGO | Lux Search | MaxConv 2026,15 Other Luxury Brands (PAUSED),jenn air appliance repair,Phrase,Paused,"Jenn-Air — не люкс-сегмент. Все Jenn-Air ключи за 8 дней: $117,72, 4 клика, 0 конв. (этот ключ в CHICAGO: 5 показов, 0 кликов)",0,0,0
 CHICAGO | Lux Search | MaxConv 2026,15 Other Luxury Brands (PAUSED),jennair repair,Phrase,Paused,"28.09: клик $13,77 по запросу «jennair com service» (горячая линия производителя)",13.77,1,0
